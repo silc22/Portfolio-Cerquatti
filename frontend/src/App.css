@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+/* font-family: 'Quicksand', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(23, 23, 23);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home__container{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.navBar{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 5vw;
+    min-height: 100vh;   
+    background-color: pink;
+}
+
+
+.navBar__menu{
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 60%;
+}
+
+
+/* KITTY COMPONENT */
+.cat__animation{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: url("./assets/gatito.png") center center/cover no-repeat;
+}
+
+.cat__animation:hover{
+    transition: .5s;
+    background: url("./assets/gatito-dos.png") center center/cover no-repeat;
+}
