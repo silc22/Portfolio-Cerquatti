@@ -1,5 +1,8 @@
 const express = require('express')
 const cors = require('cors')
+const Router = require('./routes/routes');
+require('dotenv').config();
+require('./config/database');
 
 
 const app = express()
@@ -7,11 +10,9 @@ app.use(cors())
 app.use(express.json())
 
 
-const port = 4000
+app.use('/api', Router)
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+const port = process.env.port || 4000;
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`)

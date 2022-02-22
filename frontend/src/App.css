@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
-/* font-family: 'Quicksand', sans-serif; */
+/* font-family: 'Ubuntu', sans-serif; */
+
+
+:root{
+    /* enable colors */
+    --width-navBar: 60px;
+}
+
 
 *{
     margin: 0;
@@ -9,22 +16,35 @@
 }
 
 body{
-    background-color: rgb(23, 23, 23);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    background-image: linear-gradient(to right bottom, #f0c0f3, #d49ad9, #b775c0);
+    background-position: fixed;
 }
 
+
+/* HOME PAGE */
 .home__container{
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.home__content{
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .navBar{
+    position: fixed;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    width: 5vw;
-    min-height: 100vh;   
-    background-color: pink;
+    width: var(--width-navBar);
+    height: 100vh; 
+    background-image: linear-gradient(to bottom right , #b069bb, #2f183200);
+    box-shadow: 0px 0px 10px #53295d;
+    
 }
 
 
@@ -33,19 +53,161 @@ body{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
-    height: 60%;
+    height: 80%;
+}
+
+.navBar__menu--icons, .navBar__menu--icons a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.navBar__menu--icons:hover{
+    transition: .3s;
+    filter: drop-shadow(1px 2px 2px #81438a);
+}
+
+.home__content{
+    width: 100%;
 }
 
 
+/* MAIN COMPONENT */
+
+.main__container{
+    max-width: 100%;
+    height:100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__tittle{
+    margin-top: 4rem;
+    color: white;
+    text-shadow: 0px 2px 2px #81438a;
+}
+
+.main__tittle h2{
+    font-size: 100px;
+    margin-left: -5rem;
+}
+
+.main__tittle--author{
+    font-size: 50px;
+    display: block;
+    margin: 1rem 0 .5rem 0 ;
+    font-weight: 600;
+}
+
+.main__tittle p{
+    color: whitesmoke;
+    text-align: end;
+}
+
+
+
+
 /* KITTY COMPONENT */
+.navBar__kitty{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
 .cat__animation{
-    width: 5rem;
-    height: 5rem;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: url("./assets/gatito.png") center center/cover no-repeat;
+    filter: drop-shadow(1px 1px 1px #81438a);
 }
 
 .cat__animation:hover{
     transition: .5s;
     background: url("./assets/gatito-dos.png") center center/cover no-repeat;
+    filter: drop-shadow(1px 2px 2px #81438a);
+
+}
+
+  
+/* BLOB ANIMATION */
+
+.blob__animation{
+    position: absolute;
+    top: -30px;
+    right: 50px;
+    z-index: -10;
+    width: 600px;
+}
+
+
+
+/* CARD COMPONENT */
+.main__card{
+    width: 70vw;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.main__card--text{
+    width: 70vw;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.279);
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px #53295d;
+    color: whitesmoke
+}
+
+
+.main__card--blurry{
+    position: absolute;
+    width: 70vw;
+    height: 50vh;
+    background: url('./assets/background-blur.jpg') center center/cover no-repeat;
+    border-radius: 5px;
+    filter: blur(5px);
+    z-index: -1;
+    
+}
+
+.main__card--blurry:hover{
+    filter: blur(1px);
+    transition: 1s;
+}
+
+
+/* ABOUT ME PAGE */
+.aboutMe__container{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* PROYECTS ME PAGE */
+.aboutMe__container{
+    width: 100%;
+    height: 100vh;
+}
+
+/* CONTACT ME PAGE */
+.proyects__container{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* CARRUN COMPONENT */
+.cat__scratches{
+    align-self: flex-end;
+    height: 20vh;
+    z-index: 2;
+    margin-left: 4rem;
 }
