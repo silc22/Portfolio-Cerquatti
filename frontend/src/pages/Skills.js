@@ -2,12 +2,12 @@ import React from "react";
 
 
 
-export default function Proyects() {
+export default function Skills() {
     
     
     return(
         <>
-        <div className="proyects__container">
+        <div className="skills__container" id="skills">
            
 
 

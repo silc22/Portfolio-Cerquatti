@@ -3,8 +3,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 import EmailIcon from '@mui/icons-material/Email';
-import {Link} from 'react-router-dom'
-import Kitty from "./Kitty";
+import {Link} from 'react-scroll'
 
 
 export default function Header(){
@@ -14,29 +13,29 @@ export default function Header(){
     return(
         <div className="navBar">
             <div className="navBar__kitty">
-                <Kitty/>
+               
             </div>
             <div className="navBar__menu">
                 <div className="navBar__menu--icons">
-                    <Link to="/">
+                    <Link to="home" smooth={true} duration={1000}>
                         <HomeIcon/> 
                         <p>Home</p>
                     </Link>
                 </div>
                 <div className="navBar__menu--icons">
-                    <Link to="/aboutme">
+                    <Link to="aboutMe" smooth={true} duration={1000}>
                         <AutoAwesomeIcon/>
                         <p>About Me</p>
                     </Link>
                 </div>
                 <div className="navBar__menu--icons">
-                    <Link to="/">
+                    <Link to="skills" smooth={true} duration={1000}>
                         <EmojiObjectsIcon/>
-                        <p>Proyects</p>
+                        <p>Skills</p>
                     </Link>
                 </div>
                 <div className="navBar__menu--icons">
-                    <Link to="/">
+                    <Link to="contact" smooth={true} duration={1000}>
                         <EmailIcon/>
                         <p>Contact</p>
                     </Link>

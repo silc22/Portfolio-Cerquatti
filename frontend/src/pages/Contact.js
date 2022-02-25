@@ -7,7 +7,7 @@ export default function Contact() {
     
     return(
         <>
-        <div className="contact__container">
+        <div className="contact__container" id="contact">
            
 
 

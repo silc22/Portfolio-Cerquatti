@@ -1,29 +1,23 @@
 import React from "react";
-import Header from "../components/Header";
 import Main from "../components/Main";
-import AboutMe from "../pages/AboutMe"
-import Contact from "./Contact";
-import Proyects from "./Proyects";
-
+import AboutMe from "./AboutMe";
+import Skills from "./Skills"
+import Contact from "./Contact"
 
 function Home() {
     
-    
+        
     return(
         <>
-        <div className="home__container">
-            <Header/>
-            <div className="home__content" >
-                <Main/>                
-                <AboutMe/>
-                <Proyects/>
+            <div className="home__content" id="home">
+                <Main/>
+                <AboutMe/> 
+                <Skills/>
                 <Contact/>
-            </div>
-        </div>   
+            </div>   
         </>
-
     )
-
 }
+
 
 export default Home;

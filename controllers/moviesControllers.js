@@ -33,7 +33,7 @@ const moviesControllers = {
         }catch(error){
             console.log(error)
         }
-        res.json({respuesta: movies, success:true})
+        res.json({response: movies, success:true})
     },
 
     deleteMovie: async(req,res)=>{
@@ -53,7 +53,7 @@ const moviesControllers = {
         let movies = req.body
         let actualizado
         try{
-            actualizado = await Movies.findOneAndUpdate({_id:id},movies,{new:true})
+            actualizado = await Movies.findOneAndUpdate({_id : id}, movies ,{ new : true})
         }catch(error){
             console.log(error)
         }

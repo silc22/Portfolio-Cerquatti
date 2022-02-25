@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import lottie from "lottie-web"
 
 
-export default function Blob() {
+export default function Loader() {
     
     const container = useRef(null)
 
@@ -11,18 +11,17 @@ export default function Blob() {
                 container: container.current,
                 renderer: 'svg',
                 loop: true,
-                autoplay: false,
-                animationData: require("../assets/ameba-blob.json"),
+                autoplay: true,
+                animationData: require("../assets/fuchsia-balls.json"),
             })
         }, [])
 
-        
 
 
     return(
         <>
-        <div className="blob__container" >
-           <div className="blob__animation" ref={container}>
+        <div className="loader__container" >
+           <div className="loader__animation" ref={container}>
            </div>
         </div>
         </>
