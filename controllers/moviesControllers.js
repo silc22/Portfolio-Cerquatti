@@ -3,7 +3,7 @@ const Movies = require('../models/Movies')
 
 const moviesControllers = {
 
-    getMovies: async(req,res)=>{
+    getStuff: async(req,res)=>{
         let movies
         let error = null
         try{
@@ -19,13 +19,13 @@ const moviesControllers = {
         })
     },
 
-    addMovies: (req, res) => {
-        const {name, image} = req.body
-        new Movies({name, image}).save()
+    addOne: (req, res) => {
+        const {name, image, category} = req.body
+        new Movies({name, image, category}).save()
         .then((response) => res.json({response}))
     },
 
-    getMovie: async(req,res)=>{  
+    getOne: async(req,res)=>{  
         let movies
         const id = req.params.id        
         try{
@@ -36,7 +36,7 @@ const moviesControllers = {
         res.json({response: movies, success:true})
     },
 
-    deleteMovie: async(req,res)=>{
+    deleteOne: async(req,res)=>{
         let movies
         const id = req.params.id
         try {
@@ -48,7 +48,7 @@ const moviesControllers = {
     },
 
 
-    modifyMovie: async(req,res)=>{
+    modifyOne: async(req,res)=>{
         let id = req.params.id
         let movies = req.body
         let actualizado

@@ -29,7 +29,7 @@ export default function Main(){
                         </p>
                     </div>
                     <div className={isOff ? "main__image" : "main__image main__image--clicked"} >
-                        <img src={cerquatti}>
+                        <img src={cerquatti} alt="Silvana Cerquatti">
                         </img>
                     </div>
                     <div  className={isOff ? "scroll-down" : "scroll-down scroll-down--clicked"} >

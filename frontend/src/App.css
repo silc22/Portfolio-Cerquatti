@@ -52,6 +52,7 @@ body{
 }
 
 .navBar__menu--icons:hover{
+    cursor: pointer;
     transition: .3s;
     filter: drop-shadow(1px 2px 2px #f6dafab3);
 }
@@ -76,12 +77,9 @@ body{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    background-color: #0b0434a7;
 }
 
-.main__container--clicked{
-   background-color: transparent;
-}
+
 
 .main__button{
     position: absolute;
@@ -94,16 +92,20 @@ body{
     align-items: center;
     width: 90%;
     height: 100%;
+
 }
 
 .main__tittle{
     width: 100%; 
     color: rgb(35, 29, 86);
+
 }
 
 .main__tittle--clicked{
     color: rgb(243, 243, 243);
     text-shadow: 0px 0px 5px rgb(216, 210, 255);
+    transition-duration: .2s ;
+
 }
 
 
@@ -116,6 +118,7 @@ body{
     text-align: center;
     text-transform: uppercase;
     filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.339));
+    transition-duration: .2s ;
 }
 
 
@@ -126,6 +129,7 @@ body{
     font-weight: lighter;
     text-transform: uppercase;
     text-align: center;
+    transition-duration: .4s ;
 }
 
 .main__tittle--welcome--clicked{
@@ -135,6 +139,7 @@ body{
     font-weight: lighter;
     text-transform: uppercase;
     text-align: center;
+    transition-duration: .4s ;
 }
 
 .main__image{
@@ -151,12 +156,14 @@ body{
     opacity: .1;
     border-radius: 100px;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.639));
+    transition-duration: .4s ;
 }
 
 .main__image--clicked > img{
     filter: none;
     opacity: 1;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.639));
+    transition-duration: .4s ;
 }
 
 .scroll-down{
@@ -164,17 +171,23 @@ body{
     justify-content: center;
     padding-top: 5rem;
     align-items: flex-end;
+    transition-duration: .4s ;
 }
 
 .scroll-down svg{
     animation: unset;
     font-size: 50px;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.639));
 
 }
+
 .scroll-down--clicked svg{
     font-size: 50px;
     cursor: pointer;
     animation: myAnim 4s ease .5s infinite normal forwards;
+    transition-duration: .4s ;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.639));
+
 }
 
 
@@ -259,10 +272,96 @@ body{
 
 
 /* ABOUT ME PAGE */
-.aboutMe__container{
+.aboutMe__container, .aboutMe__container-one{
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+
 }
+
+.aboutMe__container h2{
+    text-transform: uppercase;
+}
+
+.slider{
+  filter: drop-shadow(2px 2px 6px rgb(27, 13, 50))
+}
+
+.slider__content{
+    transform: rotateX(50x);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose{
+  width: 100%;
+  height: 100%;
+  background-color: wheat;
+}
+
+.slider{
+    background-color: rgba(153, 205, 50, 0.272);
+    width: 25rem;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 10px
+}
+
+.img__container{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+
+}
+
+.slide_active img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    background-color: #76338876;
+}
+
+.slide_active p {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.slide_active{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition-duration: 1s;
+
+}
+
+.slide_inactive{
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.left-arrow svg{
+    margin: 0 2rem 0 0;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px rgb(27, 13, 50))
+
+}
+
+.right-arrow svg{
+    margin: 0 0 0 2rem;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px rgb(27, 13, 50))
+}
+
+
 
 
 /* SKILLS ME PAGE */
@@ -280,10 +379,97 @@ body{
 
 
 /* LOADER COMPONENT */
-.loader__container{
-    width: 8rem;
-    height: 8rem;
-}
+/* .cs-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .cs-loader-inner {
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    width: calc(100% - 200px);
+    color: #FFF;
+    padding: 0 100px;
+    text-align: center;
+  }
+  
+  .cs-loader-inner label {
+    font-size: 20px;
+    opacity: 0;
+    display:inline-block;
+  }
+  
+  @keyframes lol {
+    0% {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+    33% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    66% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+  }
+  
+  @-webkit-keyframes lol {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-300px);
+    }
+    33% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+    }
+    66% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(300px);
+    }
+  }
+  
+  .cs-loader-inner label:nth-child(6) {
+    -webkit-animation: lol 3s infinite ease-in-out;
+    animation: lol 3s infinite ease-in-out;
+  }
+  
+  .cs-loader-inner label:nth-child(5) {
+    -webkit-animation: lol 3s 100ms infinite ease-in-out;
+    animation: lol 3s 100ms infinite ease-in-out;
+  }
+  
+  .cs-loader-inner label:nth-child(4) {
+    -webkit-animation: lol 3s 200ms infinite ease-in-out;
+    animation: lol 3s 200ms infinite ease-in-out;
+  }
+  
+  .cs-loader-inner label:nth-child(3) {
+    -webkit-animation: lol 3s 300ms infinite ease-in-out;
+    animation: lol 3s 300ms infinite ease-in-out;
+  }
+  
+  .cs-loader-inner label:nth-child(2) {
+    -webkit-animation: lol 3s 400ms infinite ease-in-out;
+    animation: lol 3s 400ms infinite ease-in-out;
+  }
+  
+  .cs-loader-inner label:nth-child(1) {
+    -webkit-animation: lol 3s 500ms infinite ease-in-out;
+    animation: lol 3s 500ms infinite ease-in-out;
+  } */
 
 /* CALL TO ACTION COMPONENT */
 

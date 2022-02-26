@@ -1,15 +1,15 @@
 const Router = require('express').Router()
 const moviesControllers = require('../controllers/moviesControllers')
 
-const {getMovies, addMovies, getMovie, deleteMovie, modifyMovie} = moviesControllers
+const {getStuff, addOne, getOne, deleteOne, modifyOne} = moviesControllers
 
-Router.route('/movies')
-.get(getMovies)
-.post(addMovies)
+Router.route('/stuff')
+.get(getStuff)
+.post(addOne)
 
-Router.route('/movies/:id')
-.get(getMovie)
-.delete(deleteMovie)
-.put(modifyMovie)
+Router.route('/stuff/:id')
+.get(getOne)
+.delete(deleteOne)
+.put(modifyOne)
 
 module.exports = Router
