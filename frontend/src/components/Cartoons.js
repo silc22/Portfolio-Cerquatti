@@ -8,17 +8,23 @@ export default function Cartoons(){
     const Cartoon = 
     [
     {name : "Dexter's Lab",
-    image: require("../assets/dexter.png")},
-    {name: "Coraje",
-    image: require("../assets/perro-cobarde.png")},
+    image: require("../assets/dexter.png"),
+    taught: "no importa cuan molesto sea una hermano, siempre en el fondo lo queremos"},
+    {name: "Courage",
+    image: require("../assets/perro-cobarde.png"),
+    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"},
     {name:"Bugs Bunny",
-    image: require("../assets/bugs-bunny.png")},
-    {name:"Chicas Super Poderosas",
-    image: require("../assets/cartoon.png")},
+    image: require("../assets/bugs-bunny.png"),
+    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"},
+    {name:"Powerpuff Girls",
+    image: require("../assets/cartoon.png"),
+    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"},
     {name:"Tom & Jerry",
-    image: require("../assets/tom-jerry.png")},
-    {name:"Jhonmy Bravo",
-    image: require("../assets/jhonny-bravo.png")}
+    image: require("../assets/tom-jerry.png"),
+    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"},
+    {name:"Jhonny Bravo",
+    image: require("../assets/jhonny-bravo.png"),
+    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"}
     ]
 
     const [current, setCurrent] = useState(0)
@@ -36,19 +42,27 @@ export default function Cartoons(){
 
     return(
         <div className="aboutMe__container-two">
-                <h2>Born in the 90's</h2>
-            <div className="slider__content">
+                <h2>Born in the 90's means:</h2>
+            <div className="slider__content--cartoon">
                 <div className="left-arrow--cartoon" >
                     <ArrowBackIosIcon onClick={()=>prevSlide()}/>
                 </div>
-                <div className="slider">
+                <div className="cartoons__slider">
                     <div className="cartoons__container"  >
                         {Cartoon?.map((element, index)=>
                         <div key={index} className={index === current ? "slide_active--cartooon" : "slide_inactive--cartooon" }> 
                             { index === current && 
-                                <img src={element.image} alt={element.name} key={index}>
-                                </img>}
-                        </div>)}
+                            <>
+                                <div className="card__container">
+                                    <img src={element.image} alt={element.name} key={index}>
+                                    </img>
+                                    <div className="cartoon__text">
+                                        <p className="cartoon__tittle">What {element.name} taught me?</p>
+                                        <p className="cartoon__bodyText">{element.taught}</p>
+                                    </div>
+                                </div>
+                            </>}
+                         </div>)}
                     </div>
                 </div>
                 <div className="right-arrow--cartoon" >

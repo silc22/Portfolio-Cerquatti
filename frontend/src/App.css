@@ -277,12 +277,13 @@ body{
     min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     color: #f5f5f5;
 }
 
 .aboutMe__container-onetwo{
+  height: 50vh;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -290,13 +291,13 @@ body{
 
 .aboutMe__container-one{
   width: 40%;
-  height: 50%;
+  height: 50vh;
   display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     color: #f5f5f5;
-    transform: rotate(-10deg);
+    transform: rotate(-7deg);
 }
 
 .aboutMe__container-two{
@@ -312,14 +313,12 @@ body{
 
 .aboutMe__container-three{
   background-color: rgba(255, 255, 0, 0.204);
-
-  width: 80%;
-  height: 100%;
+  width: 50%;
   display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    color: #f5f5f5;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5;
 }
 
 .aboutMe__container h2{
@@ -330,11 +329,26 @@ body{
 .buttons__aboutMe{
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+
+.buttons__aboutMe div{
+  cursor: pointer;
+  padding: 0 0 0.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.353);
+}
+
+.buttons__aboutMe div:hover{
+  border-bottom: 1px solid rgb(255, 255, 255);
+
 }
 
 
 .slider{
-  filter: drop-shadow(2px 2px 6px rgb(27, 13, 50))
+  filter: drop-shadow(2px 2px 6px rgb(27, 13, 50));
+  margin: 1rem 0 ;
 }
 
 .slider__content{
@@ -355,7 +369,7 @@ body{
 .img__container{
     width: 100%;
     height: 100%;
-    background-color: #000000;
+    background-color: #7564753b;
 }
 
 .slide_active img{
@@ -378,7 +392,6 @@ body{
     height: 100%;
     opacity: 1;
     transition-duration: 1s;
-
 }
 
 .slide_inactive{
@@ -401,7 +414,20 @@ body{
 
 
 /* CARTONNS COMPONENT */
+.slider__content--cartoon{
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
 
+.cartoons__slider{
+  width: 25rem;
+  min-height: 27rem;
+  overflow: hidden;
+  border-radius: 10px
+}
 
 .cartoons__container{
   width: 100%;
@@ -414,13 +440,39 @@ body{
   height: 100%;
   opacity: 1;
   transition-duration: 1s;
+  overflow: visible;
+
 }
 
 .slide_active--cartooon img{
-  width: 100%;
-  height: 100%;
+  position: relative;
+  bottom: -50px;
+  width: 70%;
   object-fit: contain;
-  border-radius: 10px;
+  animation: floating 2s linear 0s infinite normal forwards;
+}
+
+@keyframes floating {
+  0%{
+      transform: translate(0px, 0px);
+      filter: drop-shadow(0px 2px 1px #2d0c2dcb);
+  }
+  25%{
+       transform: translate(0px, -3px);
+       filter: drop-shadow(0px 5px 5px #340d34)
+  }
+  50%{
+      transform: translate(0px, -5px);
+      filter: drop-shadow(1px 15px 11px #340d34);
+  }
+  75% {
+     transform: translate(0px, -3px);
+      filter: drop-shadow(0px 5px 5px #340d34);
+  } 
+  100%{
+      transform: translate(0px, 0px);
+      filter: drop-shadow(0px 1px 1px #340d34);
+  }
 }
 
 .slide_inactive--cartooon{
@@ -428,17 +480,48 @@ body{
   transition-duration: 1s ease;
 }
 
-.left-arrow--cartoo svg{
+.left-arrow--cartoon svg{
   cursor: pointer;
   filter: drop-shadow(2px 2px 2px rgb(27, 13, 50))
 
 }
 
-.right-arrow--cartoo svg{
+.right-arrow--cartoon svg{
   cursor: pointer;
   filter: drop-shadow(2px 2px 2px rgb(27, 13, 50))
 }
 
+.card__container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartoon__text{
+  margin: 0 .5rem 1rem .5rem;
+  padding: 3.5rem .5rem 0 .5rem;
+  max-width: 18rem;
+  min-height: 10rem;
+  border-radius: 10px;
+  background-color: #7564753b;
+  z-index: -1;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px #3e143e;
+  color: white;
+}
+
+.cartoon__tittle{
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: .5rem;
+}
+
+.cartoon__bodyText {
+  text-align: justify;
+}
 
 
 /* SKILLS ME PAGE */
@@ -580,27 +663,6 @@ body{
     border-radius: 50px;
 }
 
-/* @keyframes floating {
-    0%{
-        transform: translate(0px, 0px);
-        filter: drop-shadow(0px 1px 1px rgb(119, 48, 110));
-    }
-    25%{
-         transform: translate(0px, -3px);
-         filter: drop-shadow(0px 5px 5px rgba(119, 48, 110, 0.762));
-    }
-    50%{
-        transform: translate(0px, -5px);
-        filter: drop-shadow(0px 11px 11px rgba(119, 48, 110, 0.666));
-    }
-    75% {
-       transform: translate(0px, -3px);
-        filter: drop-shadow(0px 5px 5px rgba(119, 48, 110, 0.762));
-    } 
-    100%{
-        transform: translate(0px, 0px);
-        filter: drop-shadow(0px 1px 1px rgb(119, 48, 110));
-    }
-} */
+
   
 

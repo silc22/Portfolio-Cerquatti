@@ -3,20 +3,27 @@ import axios from "axios"
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Cartoons from "../components/Cartoons";
+import Loader from "../components/Loader"
 
 export default function AboutMe() {
     
     const [stuff, setStuff] = useState([])
     const [filteredArray, setfilteredArray] = useState([])
     const [current, setCurrent] = useState(0)
+    const [click, setClick] = useState(false)
     
-    useEffect (async () =>{
-        const data = await axios.get("http://localhost:4000/api/stuff")
-        setStuff(data.data.response)
-        setfilteredArray(data.data.response)
+    useEffect  (() =>{
+        axios.get("http://localhost:4000/api/stuff")
+        .then(res => {
+            setStuff(res.data.response)
+            setfilteredArray(res.data.response)
+        })
+        .catch(err => (console.log(err)))
     }, [])
     
     
+
+
     const showCategory = (letter) =>{
         setCurrent(0)
         setfilteredArray(stuff.filter(array => array.category.toLowerCase().startsWith(letter)))
@@ -36,30 +43,21 @@ export default function AboutMe() {
     return(
         <>
         <div className="aboutMe__container" id="aboutMe">
+        <div className="aboutMe__container-three">
+                <p>WHO AM I?</p>
+                <p>Soy la menor de 3 hermanos, nací en un pequeño pueblo llamado Oncativo en Argentina. Tengo 27 años. bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla </p>
+            </div>
             <div className="aboutMe__container-onetwo">
                 <div className="aboutMe__container-one">
                     <h2>Favorites stuff</h2>
-                    <div className="buttons__aboutMe">
-                        <button onClick={()=>showCategory("m")}>
-                            MOVIES
-                        </button>
-                        <button onClick={()=>showCategory("s")}>
-                            SERIES
-                        </button>
-                        <button onClick={()=>showCategory("g")}>
-                            GAMES
-                        </button>
-                        <button onClick={()=>showCategory("")}>
-                            SHOW ALL
-                        </button>
-                    </div>
                     <div className="slider__content">
                         <div className="left-arrow" >
                             <ArrowBackIosIcon onClick={()=>prevSlide()}/>
                         </div>
                         <div className="slider">
                             <div className="img__container"  >
-                                {filteredArray?.map((favorite, index)=>
+                                {filteredArray === 0 ? <Loader/>
+                                 :   filteredArray?.map((favorite, index)=>
                                 <div key={index} className={index === current ? "slide_active" : "slide_inactive" }> 
                                     { index === current && 
                                         <>
@@ -76,12 +74,24 @@ export default function AboutMe() {
                             <ArrowForwardIosIcon onClick={()=>nextSlide()}/>
                         </div>
                     </div>
+                    <div className="buttons__aboutMe">
+                        <div onClick={()=>showCategory("m")}>
+                            MOVIES
+                        </div>
+                        <div onClick={()=>showCategory("s")}>
+                            SERIES
+                        </div>
+                        <div onClick={()=>showCategory("g")}>
+                            GAMES
+                        </div>
+                        <div onClick={()=>showCategory("")}>
+                            ALL
+                        </div>
+                    </div>
                 </div>
                 <Cartoons/>
             </div>
-            <div className="aboutMe__container-three">
-                <p>Lorem</p>
-            </div>
+            
         </div>
         </>
 
