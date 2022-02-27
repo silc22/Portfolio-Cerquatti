@@ -283,14 +283,15 @@ body{
 }
 
 .aboutMe__container-onetwo{
+  width: 100%;
   height: 50vh;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .aboutMe__container-one{
-  width: 40%;
   height: 50vh;
   display: flex;
     flex-flow: column nowrap;
@@ -301,7 +302,6 @@ body{
 }
 
 .aboutMe__container-two{
-  width: 40vw;
   height: 50vh;
   display: flex;
     flex-flow: column nowrap;
@@ -312,14 +312,16 @@ body{
 }
 
 .aboutMe__container-three{
-  background-color: rgba(255, 255, 0, 0.204);
+  margin: 2.5rem 0;
   width: 50%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   color: #f5f5f5;
-}
+  text-align: justify;
+  text-indent: 1rem;
+line-height: 1.5;}
 
 .aboutMe__container h2{
     text-transform: uppercase;
@@ -336,12 +338,13 @@ body{
 
 .buttons__aboutMe div{
   cursor: pointer;
-  padding: 0 0 0.2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.353);
+  font-size: 12px;
+  padding: .2rem;
+  border-radius: 5px;
 }
 
 .buttons__aboutMe div:hover{
-  border-bottom: 1px solid rgb(255, 255, 255);
+  background-color: #ffffff2d;
 
 }
 
