@@ -3,8 +3,7 @@ import axios from "axios"
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Cartoons from "../components/Cartoons";
-import {Link} from "react-scroll"
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ButtonToc from "../components/ButtonToc"
 
 
 export default function AboutMe() {
@@ -12,7 +11,7 @@ export default function AboutMe() {
     const [stuff, setStuff] = useState([])
     const [filteredArray, setfilteredArray] = useState([])
     const [current, setCurrent] = useState(0)
-    const [click, setClick] = useState(false)
+    const [toc, setToc] = useState(true)
     
     useEffect  (() =>{
         axios.get("http://localhost:4000/api/stuff")
@@ -24,7 +23,9 @@ export default function AboutMe() {
     }, [])
     
     
-
+    const turningOn = () => {
+        setToc(!toc)
+    }
 
     const showCategory = (letter) =>{
         setCurrent(0)
@@ -45,12 +46,19 @@ export default function AboutMe() {
     return(
         <>
         <div className="aboutMe__container" id="aboutMe">
-        <div className="aboutMe__container-three">
-                <p>WHO AM I?</p>
-                <p>Soy la menor de 3 hermanos, nací en un pequeño pueblo llamado Oncativo en Argentina. Tengo 27 años. bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla </p>
+            <div className="aboutMe__container-onetwo">
+                <div className="aboutMe__container-three">
+                    <p>WHO AM I?</p>
+                    <p>Soy la menor de 3 hermanos, nací en un pequeño pueblo llamado Oncativo en Argentina. Tengo 27 años. bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla 
+                    </p>
+                </div>
+                <Cartoons state={toc} />
+            </div>
+            <div className="toc__button" onClick={()=>turningOn()}>
+                <ButtonToc state={toc}/>
             </div>
             <div className="aboutMe__container-onetwo">
-                <div className="aboutMe__container-one">
+                <div className={toc? "aboutMe__container-one" : "aboutMe__container-one toc"}>
                     <h2>Favorites stuff</h2>
                     <div className="slider__content">
                         <div className="left-arrow" >
@@ -90,7 +98,10 @@ export default function AboutMe() {
                         </div>
                     </div>
                 </div>
-                <Cartoons/>
+                <div className="aboutMe__container-three">
+                    <p>WHO AM I?</p>
+                    <p>Soy la menor de 3 hermanos, nací en un pequeño pueblo llamado Oncativo en Argentina. Tengo 27 años. bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla  </p>
+                </div>
             </div>
         </div>
         </>

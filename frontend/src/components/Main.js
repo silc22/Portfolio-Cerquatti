@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import cerquatti from "../assets/Cerquatti.jpg"
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import CallToAction from "./Button";
+import CallToAction from "./CallToAction";
 import {Link} from "react-scroll"
 
 export default function Main(){

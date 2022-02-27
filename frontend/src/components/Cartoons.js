@@ -3,7 +3,9 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 
-export default function Cartoons(){
+export default function Cartoons(props){
+
+    let state = props.state
 
     const Cartoon = 
     [
@@ -24,6 +26,12 @@ export default function Cartoons(){
     taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"},
     {name:"Jhonny Bravo",
     image: require("../assets/jhonny-bravo.png"),
+    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"},
+    {name:"Sponge Bob",
+    image: require("../assets/sponge-bob.png"),
+    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"},
+    {name:"Hey! Arnold",
+    image: require("../assets/hey-arnold-dos.png"),
     taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"}
     ]
 
@@ -41,7 +49,7 @@ export default function Cartoons(){
     }
 
     return(
-        <div className="aboutMe__container-two">
+        <div className={state? "aboutMe__container-two" : "aboutMe__container-two toc"}>
                 <h2>Born in the 90's means:</h2>
             <div className="slider__content--cartoon">
                 <div className="left-arrow--cartoon" >
@@ -57,7 +65,7 @@ export default function Cartoons(){
                                     <img src={element.image} alt={element.name} key={index}>
                                     </img>
                                     <div className="cartoon__text">
-                                        <p className="cartoon__tittle">What {element.name} taught me?</p>
+                                        <p className="cartoon__tittle">What <span>{element.name}</span> taught me?</p>
                                         <p className="cartoon__bodyText">{element.taught}</p>
                                     </div>
                                 </div>
