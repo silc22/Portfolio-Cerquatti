@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom"
 
 
 export default function Skills() {
@@ -7,11 +7,8 @@ export default function Skills() {
     
     return(
         <>
-        <div className="skills__container" id="skills">
-           
-
-
-        </div>
+        
+        
         </>
 
     )

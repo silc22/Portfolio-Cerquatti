@@ -69,6 +69,7 @@ export default function Cartoons(){
                     <ArrowForwardIosIcon onClick={()=>nextSlide()}/>
                 </div>
         </div>
+        
         </div>
 
 

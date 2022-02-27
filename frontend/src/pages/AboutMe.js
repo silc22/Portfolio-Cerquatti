@@ -3,7 +3,9 @@ import axios from "axios"
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Cartoons from "../components/Cartoons";
-import Loader from "../components/Loader"
+import {Link} from "react-scroll"
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 export default function AboutMe() {
     
@@ -56,8 +58,7 @@ export default function AboutMe() {
                         </div>
                         <div className="slider">
                             <div className="img__container"  >
-                                {filteredArray === 0 ? <Loader/>
-                                 :   filteredArray?.map((favorite, index)=>
+                                {filteredArray?.map((favorite, index)=>
                                 <div key={index} className={index === current ? "slide_active" : "slide_inactive" }> 
                                     { index === current && 
                                         <>
@@ -91,7 +92,6 @@ export default function AboutMe() {
                 </div>
                 <Cartoons/>
             </div>
-            
         </div>
         </>
 
@@ -99,3 +99,4 @@ export default function AboutMe() {
 
 }
 
+// : "scroll-down scroll-down--clicked"

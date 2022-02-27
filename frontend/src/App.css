@@ -312,7 +312,7 @@ body{
 }
 
 .aboutMe__container-three{
-  margin: 2.5rem 0;
+  margin: 2.5rem 0 3rem 0;
   width: 50%;
   display: flex;
   flex-flow: column nowrap;
@@ -414,6 +414,7 @@ line-height: 1.5;}
     cursor: pointer;
     filter: drop-shadow(2px 2px 2px rgb(27, 13, 50))
 }
+
 
 
 /* CARTONNS COMPONENT */
