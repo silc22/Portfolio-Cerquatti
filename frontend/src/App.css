@@ -272,41 +272,80 @@ body{
 
 
 /* ABOUT ME PAGE */
-.aboutMe__container, .aboutMe__container-one{
+.aboutMe__container{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     color: #f5f5f5;
+}
 
+.aboutMe__container-onetwo{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.aboutMe__container-one{
+  width: 40%;
+  height: 50%;
+  display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+    transform: rotate(-10deg);
+}
+
+.aboutMe__container-two{
+  width: 40vw;
+  height: 50vh;
+  display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+    transform: rotate(7deg);
+}
+
+.aboutMe__container-three{
+  background-color: rgba(255, 255, 0, 0.204);
+
+  width: 80%;
+  height: 100%;
+  display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
 }
 
 .aboutMe__container h2{
     text-transform: uppercase;
 }
 
+
+.buttons__aboutMe{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+
 .slider{
   filter: drop-shadow(2px 2px 6px rgb(27, 13, 50))
 }
 
 .slider__content{
-    transform: rotateX(50x);
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
 
-.choose{
-  width: 100%;
-  height: 100%;
-  background-color: wheat;
-}
 
 .slider{
-    background-color: rgba(153, 205, 50, 0.272);
     width: 25rem;
     height: 20rem;
     overflow: hidden;
@@ -317,7 +356,6 @@ body{
     width: 100%;
     height: 100%;
     background-color: #000000;
-
 }
 
 .slide_active img{
@@ -361,6 +399,45 @@ body{
     filter: drop-shadow(2px 2px 2px rgb(27, 13, 50))
 }
 
+
+/* CARTONNS COMPONENT */
+
+
+.cartoons__container{
+  width: 100%;
+  height: 100%;
+}
+
+
+.slide_active--cartooon{
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.slide_active--cartooon img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.slide_inactive--cartooon{
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.left-arrow--cartoo svg{
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px rgb(27, 13, 50))
+
+}
+
+.right-arrow--cartoo svg{
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px rgb(27, 13, 50))
+}
 
 
 
