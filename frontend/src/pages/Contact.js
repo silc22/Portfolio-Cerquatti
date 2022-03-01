@@ -7,10 +7,10 @@ export default function Contact() {
     return(
         <>
         <div className="contact__container" id="contact">
-            <div className="skills__icons">
+            <div className="contact__form">
             <Formularios/>
             </div>
-            <div className="skills__text">
+            <div className="contact__text">
                 <p className="cartoon__tittle">
                     What can you do?
                 </p>

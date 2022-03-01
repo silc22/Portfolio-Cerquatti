@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import emailjs from "emailjs-com"
-
+import SendIcon from '@mui/icons-material/Send';
 
 export default function Formularios(){
 
@@ -30,8 +30,8 @@ export default function Formularios(){
 
     return(
         <>
-        <div>
-            <p>what do you gonna do?</p>
+        <div className="form__container">
+            <p>Contact me: </p>
             <form onSubmit={handleSubmit}>
             <label htmlFor="subjet">
                    Subjet:
@@ -42,9 +42,10 @@ export default function Formularios(){
                     name="subjet" 
                     value={values.name}
                     onChange={handleChange}
+                    required
                 />
                 <label htmlFor="userName">
-                    Full Name:
+                    Full name:
                 </label>
                 <input 
                     id="userName" 
@@ -52,9 +53,10 @@ export default function Formularios(){
                     name="userName" 
                     value={values.name}
                     onChange={handleChange}
+                    required
                 />
                 <label htmlFor="userEmail">
-                    Email
+                    Your e-mail:
                 </label>
                 <input 
                     id="userEmail" 
@@ -62,9 +64,10 @@ export default function Formularios(){
                     name="userEmail" 
                     value={values.name}
                     onChange={handleChange}
+                    required
                 />
                 <label htmlFor="message">
-                    Text:
+                    Your mesagge:
                 </label>
                 <textarea 
                     id="message" 
@@ -72,8 +75,11 @@ export default function Formularios(){
                     name="message" 
                     value={values.name}
                     onChange={handleChange}
+                    required
                 />
-                <input type="submit" />
+                <button  type="submit" className="send-button">
+                   SEND <SendIcon/>
+                </button>
             </form>
         </div>
         </>
