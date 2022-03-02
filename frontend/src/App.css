@@ -640,6 +640,7 @@ form input, textarea{
   border: unset;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.258);
+  box-shadow: 1px 1px 5px #0000006e;
 }
 
 form > textarea{
@@ -675,6 +676,8 @@ form > textarea:focus-visible{
   color: white;
   background-color: #876083;
   border: unset;
+  box-shadow: 1px 1px 5px #0000006e;
+
 }
 
 .send-button svg{
@@ -684,105 +687,65 @@ form > textarea:focus-visible{
 .send-button:hover{
   transition: .3s;
   background-color: #704c7b;
-  box-shadow: -1px -1px 3px black;
+  cursor: pointer;
 }
 
 
-/* LOADER COMPONENT */
-/* .cs-loader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .cs-loader-inner {
-    transform: translateY(-50%);
-    top: 50%;
-    position: absolute;
-    width: calc(100% - 200px);
-    color: #FFF;
-    padding: 0 100px;
-    text-align: center;
-  }
-  
-  .cs-loader-inner label {
-    font-size: 20px;
-    opacity: 0;
-    display:inline-block;
-  }
-  
-  @keyframes lol {
-    0% {
-      opacity: 0;
-      transform: translateX(-300px);
-    }
-    33% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-    66% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-    100% {
-      opacity: 0;
-      transform: translateX(300px);
-    }
-  }
-  
-  @-webkit-keyframes lol {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(-300px);
-    }
-    33% {
-      opacity: 1;
-      -webkit-transform: translateX(0px);
-    }
-    66% {
-      opacity: 1;
-      -webkit-transform: translateX(0px);
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateX(300px);
-    }
-  }
-  
-  .cs-loader-inner label:nth-child(6) {
-    -webkit-animation: lol 3s infinite ease-in-out;
-    animation: lol 3s infinite ease-in-out;
-  }
-  
-  .cs-loader-inner label:nth-child(5) {
-    -webkit-animation: lol 3s 100ms infinite ease-in-out;
-    animation: lol 3s 100ms infinite ease-in-out;
-  }
-  
-  .cs-loader-inner label:nth-child(4) {
-    -webkit-animation: lol 3s 200ms infinite ease-in-out;
-    animation: lol 3s 200ms infinite ease-in-out;
-  }
-  
-  .cs-loader-inner label:nth-child(3) {
-    -webkit-animation: lol 3s 300ms infinite ease-in-out;
-    animation: lol 3s 300ms infinite ease-in-out;
-  }
-  
-  .cs-loader-inner label:nth-child(2) {
-    -webkit-animation: lol 3s 400ms infinite ease-in-out;
-    animation: lol 3s 400ms infinite ease-in-out;
-  }
-  
-  .cs-loader-inner label:nth-child(1) {
-    -webkit-animation: lol 3s 500ms infinite ease-in-out;
-    animation: lol 3s 500ms infinite ease-in-out;
-  } */
+/* FOOTER COMPONENT */
+.footer__container{
+  min-width: 100%;
+  min-height: 20vh;
+  background: linear-gradient(180deg, rgba(45, 24, 47,0) 0%, rgba(45, 24, 47, 0.76) 42%, rgba(45, 24, 47,0.9951330874146533) 80%);  z-index: -1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer__icons{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 60vw;
+}
+
+.footer__icons svg{
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+}
+
+.footer__text{
+  margin: 1rem 0 0 0;
+  color: rgba(255, 255, 255, 0.775);
+  text-align: center;
+}
+
+
+.footer__text p{
+  padding-top: .3rem
+}
+
+.button__top{
+  position: absolute;
+  right: 100px;
+  width:  20px;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.button__top svg{
+  font-size: 25px;
+}
+
+.button__top svg:hover{
+  transition: .3s;
+  font-size: 30px;
+}
 
 /* CALL TO ACTION COMPONENT */
-
 
 .button__container{
     cursor: pointer;
@@ -861,4 +824,18 @@ form > textarea:focus-visible{
   font-size: .5rem;
   padding: .2rem;
   border-radius: 50px;
+}
+
+::-webkit-scrollbar{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+  background-color: #311b42;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 1px;
+  background-color: #612d7a;
+  background-image: -webkit-linear-gradient(90deg,transparent,#513838 50%,transparent,transparent)
 }
