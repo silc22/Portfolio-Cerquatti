@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import emailjs from "emailjs-com"
 import SendIcon from '@mui/icons-material/Send';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Formularios(){
 
@@ -22,11 +24,31 @@ export default function Formularios(){
         e.preventDefault();
         emailjs.sendForm('service_xcwqbzo', 'template_zq3euc7', e.target , 'HAlDgSFUdblOZKWZj')
         .then((result) => {
-            console.log(result.text);
+            toast.success("Message sent! 😄", {
+                position: "bottom-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
         }, (error) => {
-            console.log(error.text);
+            toast.error("Oops! try again 🤔", {
+                position: "bottom-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+    });
         });
+        e.target.reset()      
     }
+
+    
+    
 
     return(
         <>
@@ -81,6 +103,7 @@ export default function Formularios(){
                    SEND <SendIcon/>
                 </button>
             </form>
+            <ToastContainer/>
         </div>
         </>
     )
