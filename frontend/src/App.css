@@ -864,6 +864,7 @@ form > textarea:focus-visible{
 }
 
 .planet{
+  margin-top: 50px;
   width: 150px;
   filter: drop-shadow(2px 2px 5px black);
   opacity: .1;
@@ -873,6 +874,7 @@ form > textarea:focus-visible{
 
 
 .planet--clicked{
+  margin-top: 50px;
   width: 150px;
   filter: drop-shadow(5px 5px 5px black);
   transition-duration: .4s ;
