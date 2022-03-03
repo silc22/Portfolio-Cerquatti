@@ -3,10 +3,13 @@ import cerquatti from "../assets/Cerquatti.jpg"
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CallToAction from "./CallToAction";
 import {Link} from "react-scroll"
+import { useParallax  } from 'react-scroll-parallax';
+import astronaut from "../assets/astronauta.png"
+import planet from "../assets/planet.png"
 
 export default function Main(){
 
-    
+    const { ref } = useParallax({ speed: -20 });
     const [isOff, setIsOff] = useState(true)
 
     const turningOn = () => {
@@ -18,6 +21,7 @@ export default function Main(){
     return(
         <>
         <div className={isOff ? "main__container" : "main__container main__container--clicked"}>
+            <img src={astronaut} alt="astronaut" ref={ref} className={isOff ? "astronaut" : "astronaut--clicked" }/>
             <div className="main__content">
                 <div className={isOff ? "main__tittle" : "main__tittle main__tittle--clicked"}>
                     <div className="text-content">
@@ -33,14 +37,18 @@ export default function Main(){
                         </img>
                     </div>
                     <div  className={isOff ? "scroll-down" : "scroll-down scroll-down--clicked"} >
-                        <Link to="aboutMe" smooth={true} duration={1000}>
+                        <Link to={isOff? "" : "aboutMe"} smooth={true} duration={1000}>
                             <ExpandMoreIcon  />  
                         </Link>
                     </div>
                 </div>
             </div>
-            <div className="main__button" onClick={()=>turningOn()}>
-                <CallToAction state={isOff}/>
+            <div className="main__button">
+            <img src={planet} className={isOff? "planet" : "planet--clicked"}>
+            </img>
+            </div>
+            <div onClick={()=>turningOn()} >
+                <CallToAction isOff={isOff} />
             </div>
         </div>
         </>

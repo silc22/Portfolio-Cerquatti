@@ -2,14 +2,14 @@ import React from "react";
 
 export default function CallToAction(props) {
     
-    let state = props.state
+    let isOff = props.isOff
 
     return(
         <> 
         <div className="action__container">
-            <div className={state ? "button__container" : "button__container button__container--clicked"}>
+            <div className={isOff ? "button__container" : "button__container button__container--clicked"}>
             {
-                state ?  
+                isOff ?  
                 <p>TURN ON</p>
                 : 
                 <p>TURN OFF</p>
@@ -21,3 +21,6 @@ export default function CallToAction(props) {
     )
 
 }
+
+
+
