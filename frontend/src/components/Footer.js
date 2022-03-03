@@ -35,10 +35,7 @@ export default function Footer(){
             </div>
             <div className="footer__text">
                 <p>
-                    Developed by Sil Cerquatti with ❤️
-                </p>
-                <p>
-                    Thanks to <i>"los pelados"</i> for support.
+                    Developed by <i>Sil Cerquatti</i> with ❤️
                 </p>
             </div>
             <div className="button__top">
