@@ -746,18 +746,17 @@ form > textarea:focus-visible{
   justify-content: center;
   align-items: center;
   padding: .5rem;
-  width: 3.5rem;
-  height: 3rem;
-  font-weight: 600;
-  background-color: #612d7a;
-  color: rgba(255, 255, 255, 0.578); ;
+  width: 4rem;
+  height: 3.5rem;
+  background-color: #622d7a00;
+  color: rgba(255, 255, 255, 0.748); ;
   border-radius: 5px;
   text-align: center;
   box-shadow: 2px 2px 5px rgb(29, 17, 39);
 }
 
 .button__container--toc:hover{
-  background-color: #633e75;
+  background-color: #5826719c;
   color: rgb(255, 255, 255);
   transition: .5s;
   box-shadow: 2px 2px 5px rgb(29, 17, 39);
@@ -777,7 +776,7 @@ form > textarea:focus-visible{
 }
 
 .button__container--toc p{
-  font-size: .5rem;
+  font-size: 1rem;
   padding: .2rem;
   border-radius: 5px;
 }

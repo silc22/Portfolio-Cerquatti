@@ -11,7 +11,7 @@ export default function ButtonToc(props) {
             <div className={state ? "button__container--toc" : "button__container--toc button__container--clicked--toc"}>
             {
                 state ?  
-                <p>OCD? CLICK ME!</p>
+                <p>OCD?</p>
                 : 
                 <p>NOT REALLY</p>
             } 
