@@ -51,7 +51,7 @@ export default function Main(){
                 </div>
             </div>
             <div className="main__button">
-            <img src={planet} className={isOff? "planet" : "planet--clicked"}>
+            <img src={planet} alt="planeta" className={isOff? "planet" : "planet--clicked"}>
             </img>
             </div>
         </div>

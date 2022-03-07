@@ -754,13 +754,8 @@ transform-style: preserve-3d;
 
 .ufo-image{
   width: 200px;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.469));
-}
-
-.ufo-image:hover{
   animation: floating 2s linear 0s infinite normal forwards;
 }
-
 
 
 /* TOC BUTTON */
