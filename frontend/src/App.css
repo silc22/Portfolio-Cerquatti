@@ -142,6 +142,7 @@ body{
     transition-duration: .4s ;
 }
 
+
 .main__image{
     display: flex;
     justify-content: center;
@@ -160,34 +161,41 @@ body{
 }
 
 .main__image--clicked > img{
+    display: flex;
+    justify-content: center;
     filter: none;
     opacity: 1;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.639));
     transition-duration: .4s ;
 }
 
+.callToAction__container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 4rem;
+  margin: 1rem 0;
+}
+
 .scroll-down{
-    display: flex;
+  display: flex;
+    align-items: center;
     justify-content: center;
-    padding-top: 5rem;
-    align-items: flex-end;
-    transition-duration: .4s ;
 }
 
 .scroll-down svg{
-    animation: unset;
     font-size: 50px;
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.639));
+    color: white;
 
 }
 
+
 .scroll-down--clicked svg{
+    color: white;
     font-size: 50px;
     cursor: pointer;
-    animation: myAnim 4s ease .5s infinite normal forwards;
-    transition-duration: .4s ;
+    animation: myAnim 6s ease .5s infinite normal forwards;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.639));
-
 }
 
 
@@ -704,32 +712,55 @@ form > textarea:focus-visible{
 
 /* CALL TO ACTION COMPONENT */
 
+.action__container{
+  border-radius: 40%;
+  width: 6rem;
+  height: 3rem;
+  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.4));
+  background: linear-gradient(355deg, #981717 0%, rgba(103,22,22,1) 100%); 
+}
+
+.action__container:active{
+  transition: .1s;
+  height: 2.5rem;
+  filter: drop-shadow(1px 5px 2px rgba(0, 0, 0, 0.724));
+}
+
 .button__container{
+    width: 6rem;
+    perspective: 142px;
     cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: .5rem;
-    width: 10rem;
-    height: 3rem;
-    font-weight: 600;
-    background-color: #161616;
-    color: rgb(255, 255, 255); ;
-    border-radius: 5px;
-    text-align: center;
-    animation: brighting 2s linear 0s infinite normal forwards;
+    align-items: flex-start;
+    background: linear-gradient(355deg, #9f2323 0%, rgba(103,22,22,1) 100%);        
+    border-radius: 50%;
 }
+
+
 
 .button__container--clicked{
-    color: #ffffff80; ;
-    background-color: rgba(0, 0, 0, 0.095);
+    color: #ffffffa3; ;
 }
 
-.button__container p{
-    font-size: 1.5rem;
+.button__container img{
+    width:  2.5rem;
+    height: 2rem;
     padding: .2rem;
     border-radius: 50px;
+    transform: rotateX(56deg) rotateY(0deg);
+transform-style: preserve-3d;
 }
+
+.ufo-image{
+  width: 200px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.469));
+}
+
+.ufo-image:hover{
+  animation: floating 2s linear 0s infinite normal forwards;
+}
+
 
 
 /* TOC BUTTON */
@@ -810,7 +841,7 @@ form > textarea:focus-visible{
 .astronaut{
   position: absolute;
   top: 70vh;
-  left: 2vw;
+  left: 3vw;
   width: 150px;
   filter: none;
     opacity: .1;

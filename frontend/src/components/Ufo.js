@@ -1,7 +1,5 @@
 import React from "react";
-import button from "../assets/button.png"
-import buttonOn from "../assets/buttonOn.png"
-
+import ufoImage from "../assets/ufo.png"
 
 export default function CallToAction(props) {
     
@@ -9,16 +7,14 @@ export default function CallToAction(props) {
 
     return(
         <> 
-        <div className={ "action__container"}>
             <div className={isOff ? "button__container" : "button__container button__container--clicked"}>
             {
                 isOff ?  
-                <img src={button} alt="button"/>
+                <img src={ufoImage} className="ufo-image"></img>
                 : 
-                <img src={buttonOn} alt="button"/>
+                <img src={ufoImage} className="ufo-image" ></img>
             } 
             </div>
-        </div>
         </>
 
     )

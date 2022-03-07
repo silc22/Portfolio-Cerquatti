@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import cerquatti from "../assets/Cerquatti.jpg"
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import CallToAction from "./CallToAction";
 import {Link} from "react-scroll"
 import { useParallax  } from 'react-scroll-parallax';
@@ -28,17 +29,23 @@ export default function Main(){
                         <h1 className={"main__tittle--author"}>
                             I'm Sil Cerquatti 
                         </h1>
+                       
                         <p className={isOff ? "main__tittle--welcome" : "main__tittle--welcome--clicked"}> 
                             &amp; Welcome to my space
-                        </p>
+                        </p> 
                     </div>
                     <div className={isOff ? "main__image" : "main__image main__image--clicked"} >
                         <img src={cerquatti} alt="Silvana Cerquatti">
                         </img>
                     </div>
-                    <div  className={isOff ? "scroll-down" : "scroll-down scroll-down--clicked"} >
+                    <div className="callToAction__container">
+                        <div onClick={()=>turningOn()} >
+                            <CallToAction isOff={isOff} />
+                        </div>
+                    </div>
+                    <div  className={isOff ? "scroll-down" : " scroll-down scroll-down--clicked"} >
                         <Link to={isOff? "" : "aboutMe"} smooth={true} duration={1000}>
-                            <ExpandMoreIcon  />  
+                            {isOff? <ExpandLessIcon/> : <ExpandMoreIcon  />  }
                         </Link>
                     </div>
                 </div>
@@ -46,9 +53,6 @@ export default function Main(){
             <div className="main__button">
             <img src={planet} className={isOff? "planet" : "planet--clicked"}>
             </img>
-            </div>
-            <div onClick={()=>turningOn()} >
-                <CallToAction isOff={isOff} />
             </div>
         </div>
         </>

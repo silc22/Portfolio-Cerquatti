@@ -7,7 +7,7 @@ export default function ButtonToc(props) {
 
     return(
         <> 
-        <div className="action__container">
+        <div>
             <div className={state ? "button__container--toc" : "button__container--toc button__container--clicked--toc"}>
             {
                 state ?  
