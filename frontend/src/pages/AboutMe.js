@@ -49,7 +49,7 @@ export default function AboutMe() {
             <div className="aboutMe__container-onetwo">
                 <div className="aboutMe__container-three">
                     <p>WHO AM I?</p>
-                    <p>Soy la menor de 3 hermanos, nací en un pequeño pueblo llamado Oncativo en Argentina. Tengo 27 años. bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla 
+                    <p>Soy la menor de 3 hermanos, nací en un pequeño pueblo llamado Oncativo en Argentina. Tengo 27 años. 
                     </p>
                 </div>
                 <Cartoons state={toc} />

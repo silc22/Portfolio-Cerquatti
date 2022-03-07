@@ -722,11 +722,11 @@ form > textarea:focus-visible{
 
 .button__container--clicked{
     color: #ffffff80; ;
-    background-color: rgba(0, 0, 0, 0.415);
+    background-color: rgba(0, 0, 0, 0.095);
 }
 
 .button__container p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: .2rem;
     border-radius: 50px;
 }
@@ -749,15 +749,16 @@ form > textarea:focus-visible{
   width: 3.5rem;
   height: 3rem;
   font-weight: 600;
-  background-color: #ffffff2b;
-  color: rgba(0, 0, 0, 0.204); ;
-  border-radius: 50px;
+  background-color: #612d7a;
+  color: rgba(255, 255, 255, 0.578); ;
+  border-radius: 5px;
   text-align: center;
+  box-shadow: 2px 2px 5px rgb(29, 17, 39);
 }
 
 .button__container--toc:hover{
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  background-color: #633e75;
+  color: rgb(255, 255, 255);
   transition: .5s;
   box-shadow: 2px 2px 5px rgb(29, 17, 39);
 }
@@ -778,7 +779,7 @@ form > textarea:focus-visible{
 .button__container--toc p{
   font-size: .5rem;
   padding: .2rem;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar{
