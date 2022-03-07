@@ -178,6 +178,7 @@ body{
 }
 
 .scroll-down{
+  margin-top: 1.5rem;
   display: flex;
     align-items: center;
     justify-content: center;
@@ -737,12 +738,6 @@ form > textarea:focus-visible{
     border-radius: 50%;
 }
 
-
-
-.button__container--clicked{
-    color: #ffffffa3; ;
-}
-
 .button__container img{
     width:  2.5rem;
     height: 2rem;
@@ -752,7 +747,11 @@ form > textarea:focus-visible{
 transform-style: preserve-3d;
 }
 
+/* UFO COMPONENT */
 .ufo-image{
+  position: absolute ;
+  right: 5vw;
+  top: 310vh;
   width: 200px;
   animation: floating 2s linear 0s infinite normal forwards;
 }
