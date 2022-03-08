@@ -4,7 +4,9 @@ import SendIcon from '@mui/icons-material/Send';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-export default function Formularios(){
+export default function Formularios(props){
+
+    let language = props.language
 
     const [values, setValues] = useState({
         subjet: "",
@@ -53,10 +55,20 @@ export default function Formularios(){
     return(
         <>
         <div className="form__container">
-            <p>Contact me: </p>
+            {
+                language?
+                <p>Contáctame:</p>
+                :
+                <p>Contact me:</p>
+            }
             <form onSubmit={handleSubmit}>
             <label htmlFor="subjet">
-                   Subjet:
+            {
+                language?
+                "Asunto:"
+                :
+                "Subjet:"
+            } 
                 </label>
                 <input 
                     id="subjet" 
@@ -67,7 +79,12 @@ export default function Formularios(){
                     required
                 />
                 <label htmlFor="userName">
-                    Full name:
+                {
+                language?
+                "Nombre completo:"
+                :
+                "Full name:"
+            } 
                 </label>
                 <input 
                     id="userName" 
@@ -78,7 +95,12 @@ export default function Formularios(){
                     required
                 />
                 <label htmlFor="userEmail">
-                    Your e-mail:
+                {
+                language?
+                "Tu e-mail:"
+                :
+                "Your e-mail:"
+            } 
                 </label>
                 <input 
                     id="userEmail" 
@@ -89,7 +111,12 @@ export default function Formularios(){
                     required
                 />
                 <label htmlFor="message">
-                    Your mesagge:
+                {
+                language?
+                "Tu mensaje:"
+                :
+                "Your message:"
+                } 
                 </label>
                 <textarea 
                     id="message" 
@@ -100,7 +127,13 @@ export default function Formularios(){
                     required
                 />
                 <button  type="submit" className="send-button">
-                   SEND <SendIcon/>
+                {
+                language?
+                "ENVIAR" 
+                :
+                "SEND:"
+                } 
+                <SendIcon/>
                 </button>
             </form>
             <ToastContainer/>

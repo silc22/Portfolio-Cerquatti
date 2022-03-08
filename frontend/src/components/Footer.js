@@ -5,9 +5,10 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 
-export default function Footer(){
+export default function Footer(props){
 
- 
+    let language= props.language
+
     return(
         <>
             <div className="footer__container">
@@ -35,9 +36,16 @@ export default function Footer(){
                     </a>
                 </div>
                 <div className="footer__text">
-                    <p>
-                        Developed by <i>Sil Cerquatti</i> with hope
-                    </p>
+                   {
+                       language?
+                       <p>
+                        Página desarrollada por <i>Sil Cerquatti</i> con amor 💜 
+                        </p>
+                       :
+                       <p>
+                            Developed by <i>Sil Cerquatti</i> with love 💜
+                        </p>
+                   } 
                 </div>
                 <div className="button__top">
                     <ArrowCircleUpIcon onClick={()=>scroll.scrollToTop()}/>

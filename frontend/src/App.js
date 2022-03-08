@@ -32,7 +32,7 @@ function App() {
             <AboutMe language={language}/>
             <Skills language={language}/>
             <Contact language={language}/>
-            <Footer/>
+            <Footer language={language}/>
         </div>
     </ParallaxProvider>
     </>

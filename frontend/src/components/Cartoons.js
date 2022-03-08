@@ -61,7 +61,7 @@ export default function Cartoons(props){
     taught: "Ser positivo y nunca olvidar de ser amable con los demás."},
     {name:"Hey! Arnold",
     image: require("../assets/hey-arnold.png"),
-    taught: "Somos capaces de hacer cualquier cosa por amor y por los amigos."}
+    taught: "Somos capaces de hacer todo por amor y por los amigos."}
     ]
 
     const [current, setCurrent] = useState(0)
@@ -101,7 +101,7 @@ export default function Cartoons(props){
                                     <img src={element.image} alt={element.name} key={index}>
                                     </img>
                                     <div className="cartoon__text">
-                                        <p className="cartoon__tittle">¿Qué me enseñó <span>{element.name}</span>?</p>
+                                        <p className="cartoon__tittle">¿Qué me enseñó <b>{element.name}</b>?</p>
                                         <p className="cartoon__bodyText">{element.taught}</p>
                                     </div>
                                 </div>
@@ -117,7 +117,7 @@ export default function Cartoons(props){
                                     <img src={element.image} alt={element.name} key={index}>
                                     </img>
                                     <div className="cartoon__text">
-                                        <p className="cartoon__tittle">What <span>{element.name}</span> taught me?</p>
+                                        <p className="cartoon__tittle">What <b>{element.name}</b> taught me?</p>
                                         <p className="cartoon__bodyText">{element.taught}</p>
                                     </div>
                                 </div>
