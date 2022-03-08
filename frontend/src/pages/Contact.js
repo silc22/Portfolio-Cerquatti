@@ -1,6 +1,5 @@
 import React from "react";
 import Formularios from "../components/Formularios";
-import { useParallax  } from 'react-scroll-parallax';
 import ufoImage from "../assets/ufo.png"
 
 

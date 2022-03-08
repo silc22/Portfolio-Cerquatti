@@ -48,8 +48,11 @@ export default function AboutMe() {
         <div className="aboutMe__container" id="aboutMe">
             <div className="aboutMe__container-onetwo">
                 <div className="aboutMe__container-three">
-                    <p>WHO AM I?</p>
-                    <p>Soy la menor de 3 hermanos, nací en un pequeño pueblo llamado Oncativo en Argentina. Tengo 27 años. 
+                    <p>
+                        WHO AM I?
+                    </p>
+                    <p>
+                        Nací en un pequeño pueblo llamado Oncativo (provincia de Cordoba, Argentina). Sin embargo, crecí en zona rural hasta mis 4 años de edad. Era todo una aventura estar rodeada de naturaleza y animales de granja. Mi padre era agricultor y mi madre ama de casa. Ser la menor de 3 hermanos implicó aprender a ser tolerante ante una pelea; a ser competitiva, como cuando luchaba por ganar en lo juegos del Family Computer con mi hermano mayor; a compartir largas horas de juegos; a cooperar en las travesuras y negociar en los conflictos. Tuve la gracia de tener una infancia hermosa y una adolescencia rodeada de amigos y amigas con una enciclopedia de anecdotas. 
                     </p>
                 </div>
                 <Cartoons state={toc} />
