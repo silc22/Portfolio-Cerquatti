@@ -17,7 +17,8 @@ export default function Contact() {
                     What can I offer?
                 </p>
                 <p className="cartoon__bodyText">
-                    oy la menor de 3 hermanos, nací en un pequeño pueblo llamado Oncativo en Argentina. Tengo 27 años. bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla oy la menor de 3 hermanos, nací en un pequeño pueblo llamado Oncativo en Argentina. Tengo 27 años. bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla   
+                   Considero tener el potencial suficiente para poder ejercer, explotar y aportar de manera profesional mis conocimientos, con la capacidad y voluntad suficiente para seguir aprendiendo. Y no menos importante, todo ello reposa sobre una estructura adquirda de inteligencia emocional o soft skills para desempeñarme.      
+                   Si crees interesante mi perfil no dudes en contactarme. 
                 </p>
             </div>
             <img src={ufoImage} className="ufo-image" alt="ovni"/>

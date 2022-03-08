@@ -22,7 +22,9 @@ export default function Skills() {
                 <p className="cartoon__bodyText">
                 Mi formación formal consta de una Intensive experience of 600HS Fullstack Web Development. A real working environment was simulated for approximately 4 months, using Agile/Scrum and "Learning by doing" methodologies. In this process we carry out individual and group projects, applying the technologies of the M.E.R.N. stack (MongoDB, Express, React and Node js.
                 </p>
-                <p>Pero independientemente he aprendido tambien por mi cuenta, soy muy independiente, curiosa y proactiva, lo que me lleva a estar en constante aprendizaje y formación.</p>   
+                <p>
+                    Pero independientemente he aprendido tambien por mi cuenta, soy muy independiente, curiosa y proactiva, lo que me lleva a estar en constante aprendizaje y formación.
+                </p>   
                 <div className="projects-container">
                     <div className="certification__image">
                         <a 

@@ -851,7 +851,7 @@ form > textarea:focus-visible{
 ::-webkit-scrollbar-thumb{
   border-radius: 1px;
   background-color: #612d7a;
-  background-image: -webkit-linear-gradient(90deg,transparent,#513838 50%,transparent,transparent)
+  background-image: -webkit-linear-gradient(90deg,transparent,#581b75 50%,transparent,transparent)
 }
 
 
