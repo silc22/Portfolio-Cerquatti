@@ -2,13 +2,14 @@ import React from "react";
 import Main from "../components/Main";
 
 
-function Home() {
+function Home(props) {
     
+    let language = props.language
         
     return(
         <>
             <div className="home__content" id="home">
-                <Main/>
+                <Main language={language}/>
             </div>   
         </>
     )

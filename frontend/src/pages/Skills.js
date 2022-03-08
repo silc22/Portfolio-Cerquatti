@@ -9,22 +9,40 @@ import hexagon from "../assets/hexagon.png"
 import itindev from "../assets/ItinDev.png"
 
 
-export default function Skills() {
+export default function Skills(props) {
     
+    let language = props.language
     
     return(
         <>
         <div className="skills__container" id="skills">
             <div className="skills__text">
-                <p className="skills__tittle">
-                    What do I know?
-                </p>
-                <p className="skills__bodyText">
-                Mi formación académica consta de una experiencia intensa de 600 hs de Full Stack Web Development. Se simuló un entorno real de trabajo durante aproximadamente 4 meses, utilizando las metodologías Agile SCRUM y <i>"Learning by doing"</i>. En este proceso llevamos adelante proyectos individuales y grupales, aplicando las tecnologías M.E.R.N. stack (MongoDB, Express, React and Node js).
-                </p>
-                <p>
-                Paralelamente también he aprendido por mi cuenta. Soy independiente, curiosa y proactiva, lo que me lleva a estar en constante aprendizaje y formación.
-                </p>   
+                { language?
+                    <>
+                        <p className="skills__tittle">
+                        ¿QUÉ APRENDÍ?
+                        </p>
+                        <p className="skills__bodyText">
+                        Mi formación académica consta de una experiencia intensa de 600 hs de Full Stack Web Development. Se simuló un entorno real de trabajo durante aproximadamente 4 meses, utilizando las metodologías Agile SCRUM y <i>"Learning by doing"</i>. En este proceso llevamos adelante proyectos individuales y grupales, aplicando las tecnologías M.E.R.N. stack (MongoDB, Express, React and Node js).
+                        </p>
+                        <p>
+                        Paralelamente también he aprendido por mi cuenta. Soy independiente, curiosa y proactiva, lo que me lleva a estar en constante aprendizaje y formación.
+                        </p>   
+                    </> 
+                    :
+                    <>
+                        <p className="skills__tittle">
+                        What did I learn?
+                        </p>
+                        <p className="skills__bodyText">
+                        Mi formación académica consta de una experiencia intensa de 600 hs de Full Stack Web Development. Se simuló un entorno real de trabajo durante aproximadamente 4 meses, utilizando las metodologías Agile SCRUM y <i>"Learning by doing"</i>. En este proceso llevamos adelante proyectos individuales y grupales, aplicando las tecnologías M.E.R.N. stack (MongoDB, Express, React and Node js).
+                        </p>
+                        <p>
+                        Paralelamente también he aprendido por mi cuenta. Soy independiente, curiosa y proactiva, lo que me lleva a estar en constante aprendizaje y formación.
+                        </p>  
+                    </>
+                }
+              
                 <div className="projects-container">
                     <div className="certification__image">
                         <a 
@@ -33,7 +51,13 @@ export default function Skills() {
                         rel="noreferrer">
                             <img src={bootcamp} alt="Bootcamp MindHub" title="Bootcamp MindHub"/>
                         </a>
-                        <p>Certification</p>
+                        {
+                            language?
+                            <p>Certificación</p>
+                            :
+                            <p>Certification</p>
+                        }
+                        
                     </div>
                     <div className="projects__image">
                         <a 
@@ -48,7 +72,12 @@ export default function Skills() {
                         rel="noreferrer">
                             <img src={itindev} alt="ITinDev" title="ITinDev"/>
                         </a>
-                        <p>Group projects</p>
+                        {
+                            language?
+                            <p>Proyectos grupales</p>
+                            :
+                            <p>Group projects</p>
+                        }
                     </div>
                 </div>
             </div>

@@ -6,8 +6,10 @@ import Cartoons from "../components/Cartoons";
 import ButtonToc from "../components/ButtonToc"
 
 
-export default function AboutMe() {
+export default function AboutMe(props) {
     
+    let language = props.language
+
     const [stuff, setStuff] = useState([])
     const [filteredArray, setfilteredArray] = useState([])
     const [current, setCurrent] = useState(0)
@@ -48,14 +50,29 @@ export default function AboutMe() {
         <div className="aboutMe__container" id="aboutMe">
             <div className="aboutMe__container-onetwo">
                 <div className="aboutMe__container-three">
-                    <p>
-                        WHO AM I?
-                    </p>
-                    <p>
-                        Nací en un pequeño pueblo llamado Oncativo (provincia de Córdoba, Argentina). Sin embargo, crecí en zona rural hasta mis 4 años de edad. Era todo una aventura estar rodeada de naturaleza y animales de granja. Mi padre era agricultor y mi madre ama de casa. Ser la menor de 3 hermanos implicó aprender a ser tolerante, a ser competitiva (como cuando luchaba por ganar jugando al Family Computer con mi hermano mayor), a compartir largas horas de juegos, a cooperar en las travesuras y negociar en los conflictos. Tuve la gracia de tener una infancia hermosa y una adolescencia rodeada de amigos y amigas con una enciclopedia de anécdotas. 
-                    </p>
+                    {
+                        language?
+                        <>
+                            <p>
+                                ¿QUIEN SOY?
+                            </p>
+                            <p>
+                                Nací en un pequeño pueblo llamado Oncativo (provincia de Córdoba, Argentina). Sin embargo, crecí en zona rural hasta mis 4 años de edad. Era todo una aventura estar rodeada de naturaleza y animales de granja. Mi padre era agricultor y mi madre ama de casa. Ser la menor de 3 hermanos implicó aprender a ser tolerante, a ser competitiva (como cuando luchaba por ganar jugando al Family Computer con mi hermano mayor), a compartir largas horas de juegos, a cooperar en las travesuras y negociar en los conflictos. Tuve la gracia de tener una infancia hermosa y una adolescencia rodeada de amigos y amigas con una enciclopedia de anécdotas. 
+                            </p>
+                        </>
+                        :
+                        <>
+                            <p>
+                                WHO AM I?
+                            </p>
+                            <p>
+                                Nací en un pequeño pueblo llamado Oncativo (provincia de Córdoba, Argentina). Sin embargo, crecí en zona rural hasta mis 4 años de edad. Era todo una aventura estar rodeada de naturaleza y animales de granja. Mi padre era agricultor y mi madre ama de casa. Ser la menor de 3 hermanos implicó aprender a ser tolerante, a ser competitiva (como cuando luchaba por ganar jugando al Family Computer con mi hermano mayor), a compartir largas horas de juegos, a cooperar en las travesuras y negociar en los conflictos. Tuve la gracia de tener una infancia hermosa y una adolescencia rodeada de amigos y amigas con una enciclopedia de anécdotas. 
+                            </p>
+                        </>
+                    }
+                    
                 </div>
-                <Cartoons state={toc} />
+                <Cartoons state={toc} language={language}/>
             </div>
             <div className="toc__button" onClick={()=>turningOn()}>
                 <ButtonToc state={toc}/>
