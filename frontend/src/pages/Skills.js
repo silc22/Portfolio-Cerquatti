@@ -3,6 +3,11 @@ import insomnia from "../assets/insomnia.png"
 import postman from "../assets/postman.png"
 import routerDom from "../assets/react-router-dom.png"
 import wordpress from "../assets/wordpress.png"
+import visualStudio from "../assets/visual-studio-code.png"
+import bootcamp from "../assets/bootcamp.png"
+import hexagon from "../assets/hexagon.png"
+import itindev from "../assets/ItinDev.png"
+
 
 export default function Skills() {
     
@@ -10,14 +15,40 @@ export default function Skills() {
     return(
         <>
         <div className="skills__container" id="skills">
-           
             <div className="skills__text">
                 <p className="cartoon__tittle">
-                    What can I offer?
+                    What do I know?
                 </p>
                 <p className="cartoon__bodyText">
-                    oy la menor de 3 hermanos, nací en un pequeño pueblo llamado Oncativo en Argentina. Tengo 27 años. bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla oy la menor de 3 hermanos, nací en un pequeño pueblo llamado Oncativo en Argentina. Tengo 27 años. bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla   
+                Mi formación formal consta de una Intensive experience of 600HS Fullstack Web Development. A real working environment was simulated for approximately 4 months, using Agile/Scrum and "Learning by doing" methodologies. In this process we carry out individual and group projects, applying the technologies of the M.E.R.N. stack (MongoDB, Express, React and Node js.
                 </p>
+                <p>Pero independientemente he aprendido tambien por mi cuenta, soy muy independiente, curiosa y proactiva, lo que me lleva a estar en constante aprendizaje y formación.</p>   
+                <div className="projects-container">
+                    <div className="certification__image">
+                        <a 
+                        href="https://www.credly.com/earner/earned/badge/64a66a6e-5e73-4245-868f-f421b2fbf310"
+                        target='_blank'
+                        rel="noreferrer">
+                            <img src={bootcamp} alt="Bootcamp MindHub" title="Bootcamp MindHub"/>
+                        </a>
+                        <p>Certification</p>
+                    </div>
+                    <div className="projects__image">
+                        <a 
+                            href="https://hexagon-techstore.herokuapp.com/"
+                            target='_blank'
+                            rel="noreferrer">
+                                <img src={hexagon} alt="Hexagon Tech Store" title="Hexagon Tech Store"/>
+                        </a>
+                        <a 
+                        href=" https://itindev-mindhub.herokuapp.com/"
+                        target='_blank'
+                        rel="noreferrer">
+                            <img src={itindev} alt="ITinDev" title="ITinDev"/>
+                        </a>
+                        <p>Group projects</p>
+                    </div>
+                </div>
             </div>
             <div className="skills__icons">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5" title="HTML5"/>
@@ -39,6 +70,7 @@ export default function Skills() {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git" title="Git"/>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" title="GitHub" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg" alt="heroku" title="Heroku"/> 
+                <img src={visualStudio} title="Visual Studio Code" alt="Visual Studio Code"></img>
                 <img src={wordpress} title="Wordpress" alt="Wordpress"></img>
            </div>
         </div>

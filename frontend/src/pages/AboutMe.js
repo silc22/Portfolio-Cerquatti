@@ -103,7 +103,9 @@ export default function AboutMe() {
                 </div>
                 <div className="aboutMe__container-three">
                     <p>WHAT I WANT?</p>
-                    <p>Soy la menor de 3 hermanos, nací en un pequeño pueblo llamado Oncativo en Argentina. Tengo 27 años. bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla bla bla bla blabla bla  </p>
+                    <p>Siempre creí que sabia lo que quería pero no consideré que el paso del tiempo va generando nuevas perspectivas de la vida,  y que por lo tanto lo que ayer era un objetivo de vida, hoy ya no lo era. 
+Comencè a los 17 años a estudiar derecho en la UNC, a mis 23 años tuve mi primera pasantía en el area de legales de una empresa un año, luego me desempeñé en un estudio jurídico por casi 3 años mas. A esa altura solo restaban 10 materias para graduarme de abogada, pero me di cuenta que no era lo que quería en mi vida. 
+Empecé a programar a mis 27 años, era un deseo que estuvo latente siempre en mi pero que nunca me animaba a hacerlo, y hoy me arrepiento de no haber comenzado antes, pero las cosas por algo suceden. Paralelamente al cambio profesional nació la idea de emigrar al exterior, en busca de oportunidades y de una mejor calidad de vida. Es así que actualmente estoy viviendo fuera de Argentina. Trabajando muy duro los nuevos deseos se fueron tranformando en una realidad para mi. </p>
                 </div>
             </div>
         </div>

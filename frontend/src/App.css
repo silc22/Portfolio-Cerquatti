@@ -537,6 +537,36 @@ line-height: 1.5;}
 }
 
 
+.projects-container{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.projects__image{
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 12px;
+}
+
+.projects__image img{
+  width: 50px;
+}
+
+
+.certification__image{
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 12px;
+
+}
+
+.certification__image img{
+  width: 100px;
+}
 
 
 /* CONTACT ME PAGE */
