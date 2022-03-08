@@ -23,7 +23,7 @@ export default function Skills() {
                 Mi formación académica consta de una experiencia intensa de 600 hs de Full Stack Web Development. Se simuló un entorno real de trabajo durante aproximadamente 4 meses, utilizando las metodologías Agile SCRUM y <i>"Learning by doing"</i>. En este proceso llevamos adelante proyectos individuales y grupales, aplicando las tecnologías M.E.R.N. stack (MongoDB, Express, React and Node js).
                 </p>
                 <p>
-                Paralelamente también he aprendido por mi cuenta. Soy muy independiente, curiosa y proactiva, lo que me lleva a estar en constante aprendizaje y formación.
+                Paralelamente también he aprendido por mi cuenta. Soy independiente, curiosa y proactiva, lo que me lleva a estar en constante aprendizaje y formación.
                 </p>   
                 <div className="projects-container">
                     <div className="certification__image">

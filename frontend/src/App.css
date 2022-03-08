@@ -295,7 +295,13 @@ body{
   color: #f5f5f5;
   text-align: justify;
   text-indent: 1rem;
-line-height: 1.5;}
+  line-height: 1.5;
+  
+}
+
+.aboutMe__container-three p{
+  padding: .5rem;
+}
 
 .aboutMe__container h2{
     text-transform: uppercase;
@@ -513,9 +519,11 @@ line-height: 1.5;}
 }
 
 .skills__text{
-  width: 50%;
+  width: 40%;
   min-height: 40%;
   color: white;
+  text-align: justify;
+  line-height: 1.5;
 }
 
 
@@ -591,14 +599,16 @@ line-height: 1.5;}
 }
 
 .contact__text{
-  width: 50%;
+  width: 40%;
   min-height: 40%;
   color: white;
   padding: 1rem;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 .contact__text ul{
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .form__container{
