@@ -20,10 +20,10 @@ export default function Skills() {
                     What do I know?
                 </p>
                 <p className="cartoon__bodyText">
-                Mi formación formal consta de una Intensive experience of 600HS Fullstack Web Development. A real working environment was simulated for approximately 4 months, using Agile/Scrum and "Learning by doing" methodologies. In this process we carry out individual and group projects, applying the technologies of the M.E.R.N. stack (MongoDB, Express, React and Node js.
+                Mi formación académica consta de una experiencia intensa de 600 hs de Full Stack Web Development. Se simuló un entorno real de trabajo durante aproximadamente 4 meses, utilizando las metodologías Agile SCRUM y <i>"Learning by doing"</i>. En este proceso llevamos adelante proyectos individuales y grupales, aplicando las tecnologías M.E.R.N. stack (MongoDB, Express, React and Node js).
                 </p>
                 <p>
-                    Pero independientemente he aprendido tambien por mi cuenta, soy muy independiente, curiosa y proactiva, lo que me lleva a estar en constante aprendizaje y formación.
+                Paralelamente también he aprendido por mi cuenta. Soy muy independiente, curiosa y proactiva, lo que me lleva a estar en constante aprendizaje y formación.
                 </p>   
                 <div className="projects-container">
                     <div className="certification__image">

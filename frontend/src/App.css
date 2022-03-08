@@ -565,7 +565,7 @@ line-height: 1.5;}
 }
 
 .certification__image img{
-  width: 100px;
+  width: 60px;
 }
 
 
@@ -594,6 +594,11 @@ line-height: 1.5;}
   width: 50%;
   min-height: 40%;
   color: white;
+  padding: 1rem;
+}
+
+.contact__text ul{
+  padding: 1rem;
 }
 
 .form__container{

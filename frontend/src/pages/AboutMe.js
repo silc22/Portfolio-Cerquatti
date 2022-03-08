@@ -52,7 +52,7 @@ export default function AboutMe() {
                         WHO AM I?
                     </p>
                     <p>
-                        Nací en un pequeño pueblo llamado Oncativo (provincia de Cordoba, Argentina). Sin embargo, crecí en zona rural hasta mis 4 años de edad. Era todo una aventura estar rodeada de naturaleza y animales de granja. Mi padre era agricultor y mi madre ama de casa. Ser la menor de 3 hermanos implicó aprender a ser tolerante ante una pelea; a ser competitiva, como cuando luchaba por ganar en lo juegos del Family Computer con mi hermano mayor; a compartir largas horas de juegos; a cooperar en las travesuras y negociar en los conflictos. Tuve la gracia de tener una infancia hermosa y una adolescencia rodeada de amigos y amigas con una enciclopedia de anecdotas. 
+                        Nací en un pequeño pueblo llamado Oncativo (provincia de Córdoba, Argentina). Sin embargo, crecí en zona rural hasta mis 4 años de edad. Era todo una aventura estar rodeada de naturaleza y animales de granja. Mi padre era agricultor y mi madre ama de casa. Ser la menor de 3 hermanos implicó aprender a ser tolerante, a ser competitiva (como cuando luchaba por ganar jugando al Family Computer con mi hermano mayor), a compartir largas horas de juegos, a cooperar en las travesuras y negociar en los conflictos. Tuve la gracia de tener una infancia hermosa y una adolescencia rodeada de amigos y amigas con una enciclopedia de anécdotas. 
                     </p>
                 </div>
                 <Cartoons state={toc} />
@@ -103,9 +103,10 @@ export default function AboutMe() {
                 </div>
                 <div className="aboutMe__container-three">
                     <p>WHAT I WANT?</p>
-                    <p>Siempre creí que sabia lo que quería pero no consideré que el paso del tiempo va generando nuevas perspectivas de la vida,  y que por lo tanto lo que ayer era un objetivo de vida, hoy ya no lo era. 
-                    Comencè a los 17 años a estudiar derecho en la UNC, a mis 23 años tuve mi primera pasantía en el area de legales de una empresa un año, luego me desempeñé en un estudio jurídico por casi 3 años mas. A esa altura solo restaban 10 materias para graduarme de abogada, pero me di cuenta que no era lo que quería en mi vida. 
-                    Empecé a programar a mis 27 años, era un deseo que estuvo latente siempre en mi pero que nunca me animaba a hacerlo, y hoy me arrepiento de no haber comenzado antes, pero las cosas por algo suceden. Paralelamente al cambio profesional nació la idea de emigrar al exterior, en busca de oportunidades y de una mejor calidad de vida. Es así que actualmente estoy viviendo fuera de Argentina. Trabajando muy duro los nuevos deseos se fueron tranformando en una realidad para mi, lo que queda pendiente es poder trabajar de lo que sé hacer. </p>
+                    <p>Siempre creí saber lo que quería, pero el paso del tiempo va generando nuevas perspectivas de la realidad y, por lo tanto, nuevos deseos. Lo que ayer era un objetivo de vida, hoy ya no lo es.
+                    Comencé a los 17 años a estudiar Derecho. A mis 23 años inicié mis primeras experiencias laborales en legales, hasta mis 27 años; sólo restaban 10 materias para graduarme de abogada, pero me di cuenta de que no era lo que quería. 
+                    Empecé a programar a mis 27 años; siempre fue una asignatura pendiente. Paralelamente al cambio profesional, nació la idea de emigrar al exterior en busca de oportunidades y de una mejor calidad de vida. Es así que actualmente estoy viviendo fuera de Argentina.
+                    Hoy lo que quiero es poder vivir de la programación y seguir trabajando duro para transformar mi realidad.</p>
                 </div>
             </div>
         </div>
