@@ -9,30 +9,30 @@ export default function Cartoons(props){
 
     const Cartoon = 
     [
-    {name : "Dexter's Lab",
-    image: require("../assets/dexter.png"),
-    taught: "no importa cuan molesto sea una hermano, siempre en el fondo lo queremos"},
     {name: "Courage",
     image: require("../assets/perro-cobarde.png"),
-    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"},
+    taught: "Enfrentar cualquier miedo para proteger a nuestros seres queridos."},
+    {name : "Dexter's Lab",
+    image: require("../assets/dexter.png"),
+    taught: "Tener hermanos mayores tiene sus complejidades, pero tambien gratificaciones."},
     {name:"Bugs Bunny",
     image: require("../assets/bugs-bunny.png"),
-    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"},
+    taught: "La inteligencia y astucia pueden ayudarnos a sortear muchos problemas."},
     {name:"Powerpuff Girls",
     image: require("../assets/cartoon.png"),
-    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"},
+    taught: "Nosotras también podemos salvar al mundo."},
     {name:"Tom & Jerry",
     image: require("../assets/tom-jerry.png"),
-    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"},
+    taught: "Ser amigos más allá de las diferencias."},
     {name:"Jhonny Bravo",
     image: require("../assets/jhonny-bravo.png"),
-    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"},
+    taught: "Tener respeto y empatía por las mujeres."},
     {name:"Sponge Bob",
     image: require("../assets/sponge-bob.png"),
-    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"},
+    taught: "Ser positivo y nunca olvidar de ser amable con los demás."},
     {name:"Hey! Arnold",
-    image: require("../assets/hey-arnold-dos.png"),
-    taught: "Siempre enfrentaremos nuestros peores miedos para salvar a un ser querido"}
+    image: require("../assets/hey-arnold.png"),
+    taught: "Somos capaces de hacer cualquier cosa por amor y por los amigos."}
     ]
 
     const [current, setCurrent] = useState(0)

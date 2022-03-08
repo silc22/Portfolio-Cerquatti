@@ -16,10 +16,10 @@ export default function Skills() {
         <>
         <div className="skills__container" id="skills">
             <div className="skills__text">
-                <p className="cartoon__tittle">
+                <p className="skills__tittle">
                     What do I know?
                 </p>
-                <p className="cartoon__bodyText">
+                <p className="skills__bodyText">
                 Mi formación académica consta de una experiencia intensa de 600 hs de Full Stack Web Development. Se simuló un entorno real de trabajo durante aproximadamente 4 meses, utilizando las metodologías Agile SCRUM y <i>"Learning by doing"</i>. En este proceso llevamos adelante proyectos individuales y grupales, aplicando las tecnologías M.E.R.N. stack (MongoDB, Express, React and Node js).
                 </p>
                 <p>

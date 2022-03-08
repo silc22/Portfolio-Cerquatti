@@ -13,10 +13,10 @@ export default function Contact() {
             <Formularios/>
             </div>
             <div className="contact__text">
-                <p className="cartoon__tittle">
+                <p className="contact__tittle">
                     What can I offer?
                 </p>
-                <ul className="cartoon__bodyText">
+                <ul className="contact__bodyText">
                     <li>
                     Potencial suficiente para poder desempeñarme y contribuir con mis conocimientos a los objetivos propuestos.
                     </li>
