@@ -25,6 +25,7 @@ export default function Main(props){
         <>
         <div className={isOff ? "main__container" : "main__container main__container--clicked"}>
             <img src={astronaut} alt="astronaut" ref={ref} className={isOff ? "astronaut" : "astronaut--clicked" }/>
+            <img src={planet} alt="planeta" className={isOff? "planet" : "planet--clicked"}/>
             <div className="main__content">
                 <div className={isOff ? "main__tittle" : "main__tittle main__tittle--clicked"}>
                     {
@@ -49,8 +50,6 @@ export default function Main(props){
                     </p> 
                 </div>
                     }
-                    
-                   
                     <div className={isOff ? "main__image" : "main__image main__image--clicked"} >
                         <img src={cerquatti} alt="Silvana Cerquatti">
                         </img>
@@ -66,10 +65,6 @@ export default function Main(props){
                         </Link>
                     </div>
                 </div>
-            </div>
-            <div className="main__button">
-            <img src={planet} alt="planeta" className={isOff? "planet" : "planet--clicked"}>
-            </img>
             </div>
         </div>
         </>

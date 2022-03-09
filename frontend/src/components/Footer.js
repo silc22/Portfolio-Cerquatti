@@ -1,9 +1,10 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll"
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 export default function Footer(props){
 
@@ -21,11 +22,11 @@ export default function Footer(props){
                     <LinkedInIcon/>
                     </a>
                     <a
-                    href="https://wa.me/393457634584"
+                    href="https://t.me/silc1994"
                     target='_blank'
                     rel="noreferrer"
                     >
-                    <WhatsAppIcon/>
+                    <TelegramIcon/>
                     </a>
                     <a
                     href="https://github.com/silc22"
@@ -33,6 +34,13 @@ export default function Footer(props){
                     rel="noreferrer"
                     >
                     <GitHubIcon/>
+                    </a>
+                    <a
+                    href="mailto:silcerquatti@gmail.com"
+                    target='_blank'
+                    rel="noreferrer"
+                    >
+                    <AlternateEmailIcon/>
                     </a>
                 </div>
                 <div className="footer__text">

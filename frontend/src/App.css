@@ -3,10 +3,6 @@
 font-family: 'Roboto Condensed', sans-serif; */
 
 
-:root{
-    --width-navBar: 60px;
-}
-
 
 *{
     margin: 0;
@@ -23,13 +19,15 @@ body{
 
 }
 
+
+
 /* HEADER COMPONENT */
 .navBar{
     position: fixed;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    width: var(--width-navBar);
+    width: 60px;
     height: 100vh; 
     background-image: linear-gradient(to bottom right , #763388, #2f183200);
     box-shadow: 0px 0px 15px #000000;
@@ -58,14 +56,12 @@ body{
 }
 
 
-
 /* HOME PAGE */
 
 .home__content{
     width: 100%;
     min-height: 100vh;
     display: flex;
-    flex-flow: column nowrap;
 }
 
 
@@ -83,6 +79,8 @@ body{
 
 .main__button{
     position: absolute;
+    width: 80px;
+    top: 15px;
     right: 80px;
 }
 
@@ -253,7 +251,7 @@ body{
   width: 100%;
   min-height: 50vh;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 3rem;
@@ -611,6 +609,9 @@ body{
   line-height: 1.5;
   text-align: justify;
 }
+.contact__tittle{
+  text-align: center;
+}
 
 .contact__text ul{
   padding: .5rem;
@@ -890,15 +891,17 @@ form > textarea:focus-visible{
   left: 3vw;
   width: 150px;
   filter: none;
-    opacity: .1;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.639));
-    transition-duration: .4s ;
-    z-index: -10;
+  opacity: .1;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.639));
+  transition-duration: .4s ;
+  z-index: -10;
 
 }
 
 .planet{
-  margin-top: 50px;
+  position: absolute;
+  top: 2vh;
+  right: 3vw;
   width: 150px;
   filter: drop-shadow(2px 2px 5px black);
   opacity: .1;
@@ -908,7 +911,9 @@ form > textarea:focus-visible{
 
 
 .planet--clicked{
-  margin-top: 50px;
+  position: absolute;
+  top: 2vh;
+  right: 3vw;
   width: 150px;
   filter: drop-shadow(5px 5px 5px black);
   transition-duration: .4s ;
@@ -948,4 +953,250 @@ form > textarea:focus-visible{
 
 .language-off{
   opacity: .3;
+}
+
+
+/* MEDIA QUERYS */
+
+/* MOBILE BREAKPOINTS */
+@media screen and (max-width: 480px) {
+
+  .main__container{
+    height: 100%;
+  }
+  
+  .astronaut{
+    left: 2vw;
+    width: 80px
+  }
+
+  .astronaut--clicked{
+    left: 2vw;
+    width: 80px
+  }
+
+  .main__content{
+    width: 100%;
+  }
+
+  .main__tittle--author{
+    margin-top: 60px;
+    font-size: 3.5rem;
+  }
+
+
+  .planet{
+    width: 60px;
+    top: 5%;
+    right: 5%;
+  }
+
+  .planet--clicked{
+    width: 60px;
+    top: 5%;
+    right: 5%;
+  }
+
+  .main__image{
+    margin: 2rem 0;
+  }
+
+  .main__image > img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .action__container{
+    border-radius: 50% 50% 40% 40%;
+    width: 4rem;
+  }
+
+  .scroll-down--clicked svg{
+    font-size: 30px;
+  }
+
+  .aboutMe__container-onetwo{
+    justify-content: center;
+  }
+
+  .aboutMe__container-three{
+    width: 90%;
+    margin: unset;
+  }
+
+  .cartoons__slider{
+    width: 15rem;
+  }
+
+  .aboutMe__container h2{
+    font-size: 20px;
+  }
+
+  .aboutMe__container-two{
+    margin-bottom: 6vh;
+    transform:  unset;
+  }
+
+  .cartoon__bodyText{
+    padding-bottom: 5px;
+  }
+
+  .aboutMe__container-one{
+    transform: unset;
+    margin-bottom: 2rem
+  }
+
+  .slider{
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .right-arrow svg, .left-arrow svg{
+    margin: unset;
+  }
+
+  .toc__button{
+    display: none;
+  }
+
+  .skills__container{
+    flex-flow: column nowrap;
+    padding: unset;
+  }
+
+  .skills__text{
+    width: 90%;
+  }
+
+  .projects-container{
+    margin-bottom: 1rem;
+    justify-content: center;  
+  }
+
+  .skills__icons{
+    margin: .5rem 0;
+    width: 90%;
+  }
+
+  .skills__icons img{
+    width: 40px;
+    height: 40px;
+    margin: 0.7rem;
+  }
+
+  .contact__form{
+    width: 90%;
+  }
+
+  .contact__container{
+    flex-flow: row wrap;
+    padding: unset;
+    margin: .5rem 0;
+  }
+
+  .contact__text{
+    width: 90%;
+  }
+
+  .footer__icons{
+    width: 80%;
+  }
+
+  .footer__icons svg{
+    font-size: 20px;
+  }
+
+  .footer__text p{
+    padding: 0 .2rem ;
+  }
+
+  .button__top{
+    position: unset;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+
+
+  .ufo-image{
+    position: unset;
+    width: 100px;
+    top: unset;
+    right: unset;
+  }
+
+  .navBar__menuIcon{
+    margin: 1rem;
+    color: white;
+    position: fixed;
+    display: inline-block;
+    font-size: 25px;
+    animation: nav2 1.5s linear 0s 1 normal backwards;
+  }
+
+  .navBarMobile{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+  }
+
+  
+  .navBarMobile_icons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navBar__menu--icons{
+    padding: .5rem;
+  }
+
+  .navBar-closed{
+    position: absolute;
+    top: 0;
+    left: -60px;
+
+  }
+  
+  .navBarMobile_icons{
+    width: 100%;
+  }
+ 
+  .navBar__open{
+    margin: 1rem;
+    color: white;
+    position: fixed;
+    display: inline-block;
+    font-size: 25px;
+    animation: nav 1s linear 0s 1 normal backwards;
+  }
+
+
+  .language__container{
+    width: unset;
+    height: unset;
+    z-index: 101;
+  }
+
+  .language__container img{
+    padding: 2px;
+    width: 20px;
+  }
+
+}
+
+/* IPAD, TABLETS BRECKPOINTS */
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+  }
 }
