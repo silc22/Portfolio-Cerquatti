@@ -35,7 +35,7 @@ export default function Main(props){
                         </h1>
                     
                         <p className={isOff ? "main__tittle--welcome" : "main__tittle--welcome--clicked"}> 
-                            &amp; Bienvenido a mi espacio
+                            &amp;  Bienvenido a mi espacio
                         </p> 
                     </div>
                     :

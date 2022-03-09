@@ -38,7 +38,7 @@ export default function Contact(props) {
                     :
                     <>
                         <p className="contact__tittle">
-                            What can I offer?
+                            WHAT CAN I OFFER?
                         </p>
                         <ul className="contact__bodyText">
                             <li>

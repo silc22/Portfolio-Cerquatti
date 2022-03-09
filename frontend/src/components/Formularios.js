@@ -131,7 +131,7 @@ export default function Formularios(props){
                 language?
                 "ENVIAR" 
                 :
-                "SEND:"
+                "SEND"
                 } 
                 <SendIcon/>
                 </button>
