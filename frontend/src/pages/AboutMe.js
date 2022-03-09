@@ -78,6 +78,27 @@ export default function AboutMe(props) {
                 <ButtonToc state={toc} language={language}/>
             </div>
             <div className="aboutMe__container-onetwo">
+            <div className="aboutMe__container-three">
+                    {
+                    language?
+                    <>
+                        <p>¿QUÉ QUIERO?</p>
+                        <p>Siempre creí saber lo que quería, pero el paso del tiempo va generando nuevas perspectivas de la realidad y, por lo tanto, nuevos deseos. Lo que ayer era un objetivo de vida, hoy ya no lo es.
+                        Comencé a los 17 años a estudiar Derecho. A mis 23 años inicié mis primeras experiencias laborales en legales, hasta mis 27 años; sólo restaban 10 materias para graduarme de abogada, pero me di cuenta de que no era lo que quería. 
+                        Empecé a programar a mis 27 años; siempre fue una asignatura pendiente. Paralelamente al cambio profesional, nació la idea de emigrar al exterior en busca de oportunidades y de una mejor calidad de vida. Es así que actualmente estoy viviendo fuera de Argentina.
+                        Hoy lo que quiero es poder vivir de la programación y seguir trabajando duro para transformar mi realidad.</p>
+                    </>
+                        :
+                    <>
+                    <p>WHAT I WANT?</p>
+                    <p>Siempre creí saber lo que quería, pero el paso del tiempo va generando nuevas perspectivas de la realidad y, por lo tanto, nuevos deseos. Lo que ayer era un objetivo de vida, hoy ya no lo es.
+                    Comencé a los 17 años a estudiar Derecho. A mis 23 años inicié mis primeras experiencias laborales en legales, hasta mis 27 años; sólo restaban 10 materias para graduarme de abogada, pero me di cuenta de que no era lo que quería. 
+                    Empecé a programar a mis 27 años; siempre fue una asignatura pendiente. Paralelamente al cambio profesional, nació la idea de emigrar al exterior en busca de oportunidades y de una mejor calidad de vida. Es así que actualmente estoy viviendo fuera de Argentina.
+                    Hoy lo que quiero es poder vivir de la programación y seguir trabajando duro para transformar mi realidad.</p>
+                    </>
+                    }
+                    
+                </div>
                 <div className={toc? "aboutMe__container-one" : "aboutMe__container-one toc"}>
                     <h2>Favorites stuff</h2>
                     <div className="slider__content">
@@ -118,27 +139,7 @@ export default function AboutMe(props) {
                         </div>
                     </div>
                 </div>
-                <div className="aboutMe__container-three">
-                    {
-                    language?
-                    <>
-                        <p>¿QUÉ QUIERO?</p>
-                        <p>Siempre creí saber lo que quería, pero el paso del tiempo va generando nuevas perspectivas de la realidad y, por lo tanto, nuevos deseos. Lo que ayer era un objetivo de vida, hoy ya no lo es.
-                        Comencé a los 17 años a estudiar Derecho. A mis 23 años inicié mis primeras experiencias laborales en legales, hasta mis 27 años; sólo restaban 10 materias para graduarme de abogada, pero me di cuenta de que no era lo que quería. 
-                        Empecé a programar a mis 27 años; siempre fue una asignatura pendiente. Paralelamente al cambio profesional, nació la idea de emigrar al exterior en busca de oportunidades y de una mejor calidad de vida. Es así que actualmente estoy viviendo fuera de Argentina.
-                        Hoy lo que quiero es poder vivir de la programación y seguir trabajando duro para transformar mi realidad.</p>
-                    </>
-                        :
-                    <>
-                    <p>WHAT I WANT?</p>
-                    <p>Siempre creí saber lo que quería, pero el paso del tiempo va generando nuevas perspectivas de la realidad y, por lo tanto, nuevos deseos. Lo que ayer era un objetivo de vida, hoy ya no lo es.
-                    Comencé a los 17 años a estudiar Derecho. A mis 23 años inicié mis primeras experiencias laborales en legales, hasta mis 27 años; sólo restaban 10 materias para graduarme de abogada, pero me di cuenta de que no era lo que quería. 
-                    Empecé a programar a mis 27 años; siempre fue una asignatura pendiente. Paralelamente al cambio profesional, nació la idea de emigrar al exterior en busca de oportunidades y de una mejor calidad de vida. Es así que actualmente estoy viviendo fuera de Argentina.
-                    Hoy lo que quiero es poder vivir de la programación y seguir trabajando duro para transformar mi realidad.</p>
-                    </>
-                    }
-                    
-                </div>
+                
             </div>
         </div>
         </>

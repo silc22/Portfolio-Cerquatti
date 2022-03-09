@@ -23,37 +23,37 @@ export default function Header(){
                     <MenuIcon/> 
                 </div>
                 :
-            <div className={open? "navBar navBarMobile" : "navBar-closed"}>
-                    <div className="navBar__open" onClick={()=>openNav()}>
-                        <CloseIcon/>
-                    </div>
-                <div className="navBar__menu navBarMobile_icons">
-                    <div className="navBar__menu--icons">
-                        <Link to="home" smooth={true} duration={1000}>
-                            <HomeIcon/> 
-                            <p>Home</p>
-                        </Link>
-                    </div>
-                    <div className="navBar__menu--icons">
-                        <Link to="aboutMe" smooth={true} duration={1000}>
-                            <AutoAwesomeIcon/>
-                            <p>About Me</p>
-                        </Link>
-                    </div>
-                    <div className="navBar__menu--icons">
-                        <Link to="skills" smooth={true} duration={1000}>
-                            <EmojiObjectsIcon/>
-                            <p>Skills</p>
-                        </Link>
-                    </div>
-                    <div className="navBar__menu--icons">
-                        <Link to="contact" smooth={true} duration={1000}>
-                            <EmailIcon/>
-                            <p>Contact</p>
-                        </Link>
+                <div className={open? "navBar navBarMobile" : "navBar-closed"}>
+                        <div className="navBar__open" onClick={()=>openNav()}>
+                            <CloseIcon/>
+                        </div>
+                    <div className="navBar__menu navBarMobile_icons">
+                        <div className="navBar__menu--icons">
+                            <Link to="home" smooth={true} duration={1000}>
+                                <HomeIcon/> 
+                                <p>Home</p>
+                            </Link>
+                        </div>
+                        <div className="navBar__menu--icons">
+                            <Link to="aboutMe" smooth={true} duration={1000}>
+                                <AutoAwesomeIcon/>
+                                <p>About Me</p>
+                            </Link>
+                        </div>
+                        <div className="navBar__menu--icons">
+                            <Link to="skills" smooth={true} duration={1000}>
+                                <EmojiObjectsIcon/>
+                                <p>Skills</p>
+                            </Link>
+                        </div>
+                        <div className="navBar__menu--icons">
+                            <Link to="contact" smooth={true} duration={1000}>
+                                <EmailIcon/>
+                                <p>Contact</p>
+                            </Link>
+                        </div>
                     </div>
                 </div>
-            </div>
             }
         </>
     )

@@ -10,9 +10,6 @@ export default function Contact(props) {
     return(
         <>
         <div className="contact__container" id="contact">
-            <div className="contact__form">
-            <Formularios language={language}/>
-            </div>
             <div className="contact__text">
                 {
                     language?
@@ -56,6 +53,9 @@ export default function Contact(props) {
                         </p>
                     </>
                 }
+            </div>
+            <div className="contact__form">
+            <Formularios language={language}/>
             </div>
             <img src={ufoImage} className="ufo-image" alt="ovni"/>
         </div>
