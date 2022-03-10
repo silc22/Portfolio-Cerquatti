@@ -14,7 +14,7 @@ export default function AboutMe(props) {
     const [current, setCurrent] = useState(0)
     
     useEffect  (() =>{
-        axios.get("http://localhost:4000/api/stuff")
+        axios.get("https://silvana-cerquatti.herokuapp.com/api/stuff")
         .then(res => {
             setStuff(res.data.response)
             setfilteredArray(res.data.response)
