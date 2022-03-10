@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
   },
   "name": "my-app",
   "version": "1.0.0",
