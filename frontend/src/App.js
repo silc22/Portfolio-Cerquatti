@@ -28,7 +28,7 @@ function App() {
             <div className='language__container' onClick={()=>changeLanguage()}>
               <Language language={language} />
             </div>
-            <Home language={language} path="/"/>
+            <Home language={language}/>
             <AboutMe language={language}/>
             <Skills language={language}/>
             <Contact language={language}/>
