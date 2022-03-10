@@ -40,28 +40,28 @@ export default function Cartoons(props){
     [
     {name: "Courage",
     image: require("../assets/perro-cobarde.png"),
-    taught: "Enfrentar cualquier miedo para proteger a nuestros seres queridos."},
+    taught: "To face any fear in order to protect my loved ones."},
     {name : "Dexter's Lab",
     image: require("../assets/dexter.png"),
-    taught: "Tener hermanos mayores tiene sus complejidades, pero tambien gratificaciones."},
+    taught: "Having older brothers it’s complicated, but it’s also rewarding."},
     {name:"Bugs Bunny",
     image: require("../assets/bugs-bunny.png"),
-    taught: "La inteligencia y astucia pueden ayudarnos a sortear muchos problemas."},
+    taught: "Intelligence and sharpness can help you to deal effectively with many situations."},
     {name:"Powerpuff Girls",
     image: require("../assets/cartoon.png"),
-    taught: "Nosotras también podemos salvar al mundo."},
+    taught: "Women can also save the world."},
     {name:"Tom & Jerry",
     image: require("../assets/tom-jerry.png"),
-    taught: "Ser amigos más allá de las diferencias."},
+    taught: "To remain friends beyond any difference."},
     {name:"Jhonny Bravo",
     image: require("../assets/jhonny-bravo.png"),
-    taught: "Tener respeto y empatía por las mujeres."},
+    taught: "To have respect and empathy for women."},
     {name:"Sponge Bob",
     image: require("../assets/sponge-bob.png"),
-    taught: "Ser positivo y nunca olvidar de ser amable con los demás."},
+    taught: "To stay positive and never forget to be kind with everyone else."},
     {name:"Hey! Arnold",
     image: require("../assets/hey-arnold.png"),
-    taught: "Somos capaces de hacer todo por amor y por los amigos."}
+    taught: "We are capable of doing anything for love and for our friends."}
     ]
 
     const [current, setCurrent] = useState(0)

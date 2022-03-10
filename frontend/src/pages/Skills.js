@@ -7,7 +7,7 @@ import visualStudio from "../assets/visual-studio-code.png"
 import bootcamp from "../assets/bootcamp.png"
 import hexagon from "../assets/hexagon.png"
 import itindev from "../assets/ItinDev.png"
-
+import solidity from "../assets/solidity.png"
 
 export default function Skills(props) {
     
@@ -19,26 +19,26 @@ export default function Skills(props) {
             <div className="skills__text">
                 { language?
                     <>
-                        <p className="skills__tittle">
-                        ¿QUÉ APRENDÍ?
+                        <p className="subtittle">
+                        ¿QUÉ APRENDÍ? 📔
                         </p>
-                        <p className="skills__bodyText">
-                        Mi formación académica consta de una experiencia intensa de 600 hs de Full Stack Web Development. Se simuló un entorno real de trabajo durante aproximadamente 4 meses, utilizando las metodologías Agile SCRUM y <i>"Learning by doing"</i>. En este proceso llevamos adelante proyectos individuales y grupales, aplicando las tecnologías M.E.R.N. stack (MongoDB, Express, React and Node js).
+                        <p >
+                        Mi formación académica consta de una experiencia <i>intensa de 600 hs de Full Stack Web Development</i>. Se simuló un entorno real de trabajo durante aproximadamente 4 meses, utilizando las metodologías Agile SCRUM y <i>"Learning by doing"</i>. En este proceso llevamos adelante proyectos individuales y grupales, aplicando las tecnologías M.E.R.N. stack (MongoDB, Express, React and Node js).
                         </p>
                         <p>
-                        Paralelamente también he aprendido por mi cuenta. Soy independiente, curiosa y proactiva, lo que me lleva a estar en constante aprendizaje y formación.
+                        Paralelamente también he aprendido por mi cuenta. Soy independiente, curiosa y proactiva, lo que me lleva a estar en constante aprendizaje y formación.💪
                         </p>   
                     </> 
                     :
                     <>
-                        <p className="skills__tittle">
-                        What did I learn?
-                        </p>
-                        <p className="skills__bodyText">
-                        Mi formación académica consta de una experiencia intensa de 600 hs de Full Stack Web Development. Se simuló un entorno real de trabajo durante aproximadamente 4 meses, utilizando las metodologías Agile SCRUM y <i>"Learning by doing"</i>. En este proceso llevamos adelante proyectos individuales y grupales, aplicando las tecnologías M.E.R.N. stack (MongoDB, Express, React and Node js).
+                        <p className="subtittle">
+                        What did I learn? 📔
                         </p>
                         <p>
-                        Paralelamente también he aprendido por mi cuenta. Soy independiente, curiosa y proactiva, lo que me lleva a estar en constante aprendizaje y formación.
+                        My academic education consists of an <i>intensive experience of a 600 hours Full Stack Web Development course</i>. A real working environment was simulated for approximately 4 months, using Agile SCRUM and "Learning by doing" methodologies. In this process we carried out individual and group projects, applying the technologies of the M.E.R.N. stack (MongoDB, Express, React and Node js).
+                        </p>
+                        <p>
+                        At the same time, I have also learned on my own. I’m independent, curious and proactive, which leads me to be in constant formation.💪
                         </p>  
                     </>
                 }
@@ -88,7 +88,6 @@ export default function Skills(props) {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="sass" title="SASS" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"  alt="bootstrap" title="Bootstrap"/>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" alt="material Ui" title="Material UI"/>
-               
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="mongo DB" title="MongoDB" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" title="Express" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" />
@@ -100,9 +99,10 @@ export default function Skills(props) {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="npm"  title="Npm" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git" title="Git"/>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" title="GitHub" />
+                <img src={wordpress} title="Wordpress" alt="Wordpress"></img>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg" alt="heroku" title="Heroku"/> 
                 <img src={visualStudio} title="Visual Studio Code" alt="Visual Studio Code"></img>
-                <img src={wordpress} title="Wordpress" alt="Wordpress"></img>
+                <img src={solidity} title="Solidty" alt="Solidty"/>
            </div>
         </div>
         </>
