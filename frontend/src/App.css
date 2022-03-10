@@ -917,6 +917,7 @@ form > textarea:focus-visible{
   width: 150px;
   filter: drop-shadow(5px 5px 5px black);
   transition-duration: .4s ;
+  z-index: -10;
 }
 
 
