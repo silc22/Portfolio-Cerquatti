@@ -1,12 +1,13 @@
 import React, {useState} from "react";
 import emailjs from "emailjs-com"
-import SendIcon from '@mui/icons-material/Send';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ufoImage from "../assets/ufo.png"
 
 export default function Formularios(props){
 
     let language = props.language
+    let [sending, setSend] =useState(false)
 
     const [values, setValues] = useState({
         subjet: "",
@@ -20,6 +21,10 @@ export default function Formularios(props){
             ...values,
             [e.target.name] : e.target.value
         })
+    }
+
+    const sendingOut = () => {
+        setSend(!sending)
     }
     
     const handleSubmit = (e) =>{
@@ -126,14 +131,14 @@ export default function Formularios(props){
                     onChange={handleChange}
                     required
                 />
-                <button  type="submit" className="send-button">
+                <button  type="submit" className="send-button" onClick={()=>sendingOut()}>
                 {
                 language?
                 "ENVIAR" 
                 :
                 "SEND"
                 } 
-                <SendIcon/>
+                <img src={ufoImage} className={sending ? "ufo-image-out" : "ufo-image"} alt="ovni"/>  
                 </button>
             </form>
             <ToastContainer/>

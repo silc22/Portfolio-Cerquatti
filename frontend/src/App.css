@@ -799,13 +799,27 @@ form > textarea:focus-visible{
 
 /* UFO COMPONENT */
 .ufo-image{
-  position: absolute ;
-  right: 5vw;
-  top: 310vh;
-  width: 200px;
-  animation: floating 2s linear 0s infinite normal forwards;
+  width: 50px;
+  animation: floating 2.5s linear 0s infinite normal forwards;
 }
 
+.ufo-image-out{
+  width: 50px;
+  animation: out 2s ease-in-out 0s 1 alternate-reverse none;
+}
+
+
+@keyframes out {
+  0% {
+    transform: scale(0);
+    transform-origin: 100% 0%;
+  }
+
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 0%;
+  }
+}
 
 /* SCROLL BAR */
 
@@ -970,7 +984,7 @@ form > textarea:focus-visible{
   .aboutMe__container-three{
     padding: unset;
     width: 90%;
-    margin: unset;
+    margin-bottom: 1rem;
   }
 
   .cartoons__slider{
@@ -1052,6 +1066,7 @@ form > textarea:focus-visible{
 
   .contact__text{
     width: 90%;
+    margin: 1rem 0;
   }
 
   .footer__icons{
@@ -1078,7 +1093,7 @@ form > textarea:focus-visible{
 
   .ufo-image{
     position: unset;
-    width: 100px;
+    width: 50px;
     top: unset;
     right: unset;
   }
@@ -1227,7 +1242,6 @@ form > textarea:focus-visible{
   
   .action__container{
     border-radius: 50% 50% 40% 40%;
-    width: 4rem;
   }
   
   .scroll-down svg{
@@ -1239,11 +1253,14 @@ form > textarea:focus-visible{
     font-size: 30px;
   }
 
+  .aboutMe__container-onetwo{
+    margin: .5rem 0;
+  }
 
   .aboutMe__container-three{
     padding: unset;
     width: 80%;
-    margin: unset;
+    margin: 1rem 0;
   }
 
   .cartoons__slider{
@@ -1330,6 +1347,7 @@ form > textarea:focus-visible{
 
   .contact__text{
     width: 80%;
+    margin: 1rem 0;
   }
 
   .footer__icons{
@@ -1337,7 +1355,7 @@ form > textarea:focus-visible{
   }
 
   .footer__icons svg{
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .footer__text p{
@@ -1355,10 +1373,7 @@ form > textarea:focus-visible{
 
 
   .ufo-image{
-    position: unset;
-    width: 100px;
-    top: unset;
-    right: unset;
+    width: 50px;
   }
   
   .navBar__menuIcon{
@@ -1367,6 +1382,491 @@ form > textarea:focus-visible{
     position: fixed;
     width: 60px;
     height: 60px;
+  }
+
+  .navBar__open {
+    margin: 1rem;
+    color: white;
+    position: fixed;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.navBarMobile{
+  animation: nav 1s ease-in-out 0s 1 alternate-reverse both;
+}
+  @keyframes nav {
+    0% {
+      transform: translateX(0); 
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+  .home__content{
+    align-items: center;
+  }
+
+  .main__container{
+    height: 100%;
+  }
+  
+  .astronaut{
+    top: 55%;
+    left: 5px;
+    width: 120px
+  }
+
+  .astronaut--clicked{
+    top: 55%;
+    left: 5px;
+    width: 120px
+  }
+
+  .main__content{
+    width: 100%;
+  }
+
+  .text__content{
+    width: 70%;
+  }
+
+  .main__tittle {
+    width: 70%;
+  }
+
+  .main__tittle--author{
+    font-size: 3.5rem;
+  }
+
+
+  .planet{
+    width: 80px;
+    top: 5%;
+    right: 5%;
+  }
+
+  .planet--clicked{
+    width: 80px;
+    top: 5%;
+    right: 5%;
+  }
+
+  .main__image{
+    margin: 2rem 0;
+  }
+
+  .main__image > img {
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  .action__container{
+    border-radius: 50% 50% 40% 40%;
+  }
+  
+  .scroll-down svg{
+    margin-top: 2rem;
+  }
+
+  .aboutMe__container-three{
+    padding: unset;
+    width: 80%;
+    margin: unset;
+  }
+
+  .cartoons__slider{
+    width: 20rem;
+  }
+
+  .aboutMe__container h2{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .aboutMe__container-two{
+    margin-bottom: 6vh;
+    transform:  unset;
+  }
+
+  .cartoon__bodyText{
+    padding-bottom: 5px;
+  }
+
+  .cartoon__text{
+    min-width: unset;
+    width: 100%;
+  }
+
+
+  .aboutMe__container-one{
+    transform: unset;
+    margin-top: 2rem
+  }
+
+  .slider{
+    width: 20rem;
+    height: 15rem;
+  }
+
+  .right-arrow svg, .left-arrow svg{
+    margin: unset;
+  }
+
+  .toc__button{
+    display: none;
+  }
+
+  .skills__container{
+    flex-flow: column nowrap;
+    padding: unset;
+  }
+
+  .skills__text{
+    padding: .5rem;
+    width: 80%;
+  }
+
+  .projects-container{
+    margin-bottom: 1rem;
+    justify-content: center;  
+  }
+
+  .skills__icons{
+    padding: .5rem;
+    width: 80%;
+  }
+
+  .skills__icons img{
+    width: 55px;
+    height: 55px;
+    margin: 1rem;
+  }
+
+
+  .contact__form{
+    width: unset;
+  }
+
+  form{
+    width: unset;
+  }
+
+  .contact__container{
+    flex-flow: column nowrap;
+    padding: unset;
+    margin: .5rem 0;
+  }
+
+  .contact__text{
+    width: 80%;
+  }
+
+  .footer__icons{
+    width: 80%;
+  }
+
+  .footer__icons svg{
+    font-size: 35px;
+  }
+
+  .footer__text p{
+    padding: 0 .2rem ;
+  }
+
+  .button__top{
+    position: unset;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+
+
+  .ufo-image{
+    width: 50px;
+  }
+  
+  .navBar__menuIcon{
+    margin: 1rem;
+    color: white;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+  }
+
+  .navBar__open {
+    margin: 1rem;
+    color: white;
+    position: fixed;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.navBarMobile{
+  animation: nav 1s ease-in-out 0s 1 alternate-reverse both;
+}
+  @keyframes nav {
+    0% {
+      transform: translateX(0); 
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .certification__image img{
+    width: 80px
+  }
+
+  .projects__image img{
+    width: 60px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px)  {
+
+  .home__content{
+    align-items: center;
+  }
+
+  .main__container{
+    height: 100%;
+  }
+  
+  .astronaut{
+    top: 55%;
+    left: 5px;
+    width: 120px
+  }
+
+  .astronaut--clicked{
+    top: 55%;
+    left: 5px;
+    width: 120px
+  }
+
+  .main__content{
+    width: 100%;
+  }
+
+  .text__content{
+    width: 70%;
+  }
+
+  .main__tittle {
+    width: 70%;
+  }
+
+  .main__tittle--author{
+    font-size: 3.5rem;
+  }
+
+
+  .planet{
+    width: 80px;
+    top: 5%;
+    right: 5%;
+  }
+
+  .planet--clicked{
+    width: 80px;
+    top: 5%;
+    right: 5%;
+  }
+
+  .main__image{
+    margin: 2rem 0;
+  }
+
+  .main__image > img {
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  .action__container{
+    border-radius: 50% 50% 40% 40%;
+  }
+  
+  .scroll-down svg{
+    margin-top: 2rem;
+  }
+
+  .aboutMe__container-three{
+    padding: unset;
+    width: 80%;
+    margin: unset;
+  }
+
+  .cartoons__slider{
+    width: 20rem;
+  }
+
+  .aboutMe__container h2{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .aboutMe__container-onetwo{
+    flex-flow: row nowrap;
+    padding: 0 60px;
+    margin-bottom: 1rem;
+  }
+  .aboutMe__container-three{
+    margin: 0 1rem 0 0;
+  }
+
+  .aboutMe__container-two{
+    margin-bottom: 6vh;
+    transform:  unset;
+  }
+
+  .cartoon__bodyText{
+    padding-bottom: 5px;
+  }
+
+  .cartoon__text{
+    min-width: unset;
+    width: 100%;
+  }
+
+  .aboutMe__container-one{
+    transform: unset;
+    margin-bottom: 2rem
+  }
+
+  .slider{
+    width: 20rem;
+    height: 15rem;
+  }
+
+  .right-arrow svg, .left-arrow svg{
+    margin: unset;
+  }
+
+  .toc__button{
+    display: none;
+  }
+
+  .skills__container{
+    flex-flow: column nowrap;
+    padding: unset;
+  }
+
+  .skills__text{
+    padding: 0 60px;
+    width: 100%;
+  }
+
+  .skills__text p{
+    padding: .5rem;
+  }
+
+  .projects-container{
+    margin-bottom: 1rem;
+    justify-content: center;  
+  }
+
+  .skills__icons{
+    padding: 0.5rem;
+    width: calc(100% - 120px);
+  }
+
+  .skills__icons img{
+    width: 55px;
+    height: 55px;
+    margin: 1rem;
+  }
+
+
+  .contact__form{
+    margin: .5rem 0;
+    width: 50%;
+  }
+
+  form{
+    width: unset;
+  }
+
+  .contact__container{
+    flex-flow: row nowrap;
+    padding: 0 60px;
+    margin: 1rem 0 0 0;
+  }
+
+  .contact__text{
+    width: 80%;
+  }
+
+  .footer__icons{
+    width: 80%;
+  }
+
+  .footer__icons svg{
+    font-size: 35px;
+  }
+
+  .footer__text p{
+    padding: 0 .2rem ;
+  }
+
+  .button__top{
+    position: unset;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+
+
+  .ufo-image{
+    width: 50px;
+  }
+  
+  .navBar__menuIcon{
+    margin: 1rem;
+    color: white;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+  }
+
+  .navBar__open {
+    margin: 1rem;
+    color: white;
+    position: fixed;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.navBarMobile{
+  animation: nav 1s ease-in-out 0s 1 alternate-reverse both;
+}
+  @keyframes nav {
+    0% {
+      transform: translateX(0); 
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .certification__image img{
+    width: 80px
+  }
+
+  .projects__image img{
+    width: 60px;
   }
 
 }

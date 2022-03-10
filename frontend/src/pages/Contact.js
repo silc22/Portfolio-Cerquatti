@@ -1,6 +1,5 @@
 import React from "react";
 import Formularios from "../components/Formularios";
-import ufoImage from "../assets/ufo.png"
 
 
 export default function Contact(props) {
@@ -56,8 +55,8 @@ export default function Contact(props) {
             </div>
             <div className="contact__form">
             <Formularios language={language}/>
+           
             </div>
-            <img src={ufoImage} className="ufo-image" alt="ovni"/>
         </div>
         </>
 
