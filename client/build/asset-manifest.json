@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.54bae20f.css",
+    "main.js": "/static/js/main.365ad8ac.js",
+    "static/media/astronauta.png": "/static/media/astronauta.5eb50c76b62212b3b5cd.png",
+    "static/media/planet.png": "/static/media/planet.f67332037fb2cb894171.png",
+    "static/media/tom-jerry.png": "/static/media/tom-jerry.7d0c9747f7d590a3377d.png",
+    "static/media/sponge-bob.png": "/static/media/sponge-bob.efb92818b45f69fcd100.png",
+    "static/media/Cerquatti.jpg": "/static/media/Cerquatti.4540ce10d4fccfad1433.jpg",
+    "static/media/english.png": "/static/media/english.10314d23412d2e442490.png",
+    "static/media/perro-cobarde.png": "/static/media/perro-cobarde.051303e031ee4911736c.png",
+    "static/media/bugs-bunny.png": "/static/media/bugs-bunny.b278f0044406c7aa6595.png",
+    "static/media/ufo.png": "/static/media/ufo.be9c9e02d2c0e4115398.png",
+    "static/media/dexter.png": "/static/media/dexter.387b5245563fb2d422be.png",
+    "static/media/spanish.png": "/static/media/spanish.b82464813f39bebffdc5.png",
+    "static/media/hey-arnold.png": "/static/media/hey-arnold.4b4a21993476a9239cc9.png",
+    "static/media/insomnia.png": "/static/media/insomnia.a94b0054847b9196230e.png",
+    "static/media/jhonny-bravo.png": "/static/media/jhonny-bravo.8b82167d795cfff5bcbf.png",
+    "static/media/cartoon.png": "/static/media/cartoon.3d29e04a1f76cc57fa5d.png",
+    "static/media/ItinDev.png": "/static/media/ItinDev.f95fda4ea48accbf18ed.png",
+    "static/media/buttonOn.png": "/static/media/buttonOn.1e22ddf5666d287380f6.png",
+    "static/media/postman.png": "/static/media/postman.b77fd3af666aedd2d863.png",
+    "static/media/solidity.png": "/static/media/solidity.15de4d9032c5fe09d6d5.png",
+    "static/media/visual-studio-code.png": "/static/media/visual-studio-code.646482a9a2da984d7e0c.png",
+    "static/media/react-router-dom.png": "/static/media/react-router-dom.c5f9e12fe5fb828a0841.png",
+    "static/media/button.png": "/static/media/button.901d56f2f6778d0c59b4.png",
+    "static/media/bootcamp.png": "/static/media/bootcamp.04082a10dc62734b4f9b.png",
+    "index.html": "/index.html",
+    "main.54bae20f.css.map": "/static/css/main.54bae20f.css.map",
+    "main.365ad8ac.js.map": "/static/js/main.365ad8ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54bae20f.css",
+    "static/js/main.365ad8ac.js"
+  ]
+}
