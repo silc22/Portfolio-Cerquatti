@@ -11,7 +11,7 @@ app.use(express.json())
 
 
 
-app.use('/api', Router)
+app.use('/', Router)
 
 const PORT = process.env.PORT || 4000;
 
