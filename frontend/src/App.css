@@ -266,7 +266,6 @@ body{
     justify-content: center;
     align-items: center;
     color: #f5f5f5;
-    transform: rotate(-7deg);
 }
 
 .aboutMe__container-two{
@@ -278,11 +277,6 @@ body{
     justify-content: center;
     align-items: center;
     color: #f5f5f5;
-    transform: rotate(7deg);
-}
-
-.toc{
-  transform: unset !important;
 }
 
 
@@ -813,54 +807,7 @@ form > textarea:focus-visible{
 }
 
 
-/* TOC BUTTON */
-.toc__button{
-  position: relative;
-  top: 50%;
-  left:0;
-}
-
-
-.button__container--toc{
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: .5rem;
-  width: 4rem;
-  height: 3.5rem;
-  background-color: #622d7a00;
-  color: rgba(255, 255, 255, 0.748); ;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 2px 2px 5px rgb(29, 17, 39);
-}
-
-.button__container--toc:hover{
-  background-color: #5826719c;
-  color: rgb(255, 255, 255);
-  transition: .5s;
-  box-shadow: 2px 2px 5px rgb(29, 17, 39);
-}
-
-.button__container--clicked--toc{
-  color: #ffffff2a; ;
-  background-color: rgba(7, 7, 7, 0.197);
-}
-
-.button__container--clicked--toc:hover{
-  transition: .3s;
-  color: #ffffff; ;
-  background-color: rgb(22, 20, 20);
-  box-shadow: 2px 2px 5px rgb(29, 17, 39);
-
-}
-
-.button__container--toc p{
-  font-size: 1rem;
-  padding: .2rem;
-  border-radius: 5px;
-}
+/* SCROLL BAR */
 
 ::-webkit-scrollbar{
   width: 12px;
@@ -921,6 +868,7 @@ form > textarea:focus-visible{
   filter: drop-shadow(5px 5px 5px black);
   transition-duration: .4s ;
 }
+
 
 /* LANGUAGE COMPONENT */
 .language__container{
@@ -1219,6 +1167,10 @@ form > textarea:focus-visible{
 /* IPAD, TABLETS BRECKPOINTS */
 
 @media screen and (min-width: 481px) and (max-width: 768px)  {
+  .home__content{
+    align-items: center;
+  }
+
   .main__container{
     height: 100%;
   }
@@ -1360,6 +1312,7 @@ form > textarea:focus-visible{
     height: 50px;
     margin: 1rem;
   }
+
 
   .contact__form{
     width: unset;

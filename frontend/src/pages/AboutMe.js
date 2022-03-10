@@ -3,7 +3,6 @@ import axios from "axios"
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Cartoons from "../components/Cartoons";
-import ButtonToc from "../components/ButtonToc"
 
 
 export default function AboutMe(props) {
@@ -72,10 +71,7 @@ export default function AboutMe(props) {
                     }
                     
                 </div>
-                <Cartoons state={toc} language={language}/>
-            </div>
-            <div className="toc__button" onClick={()=>turningOn()}>
-                <ButtonToc state={toc} language={language}/>
+                <Cartoons language={language}/>
             </div>
             <div className="aboutMe__container-onetwo">
             <div className="aboutMe__container-three">
@@ -99,7 +95,7 @@ export default function AboutMe(props) {
                     }
                     
                 </div>
-                <div className={toc? "aboutMe__container-one" : "aboutMe__container-one toc"}>
+                <div className="aboutMe__container-one">
                     <h2>Favorites stuff</h2>
                     <div className="slider__content">
                         <div className="left-arrow" >

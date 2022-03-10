@@ -6,7 +6,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 export default function Cartoons(props){
 
     let language = props.language
-    let state = props.state
+
 
     const CartoonSpanish = 
     [
@@ -79,7 +79,7 @@ export default function Cartoons(props){
     }
 
     return(
-        <div className={state? "aboutMe__container-two" : "aboutMe__container-two toc"}>
+        <div className="aboutMe__container-two">
                 {
                     language?
                     <h2>Nacer en los 90's significa:</h2>
