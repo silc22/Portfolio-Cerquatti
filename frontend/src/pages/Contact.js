@@ -19,9 +19,9 @@ export default function Contact(props) {
                         <ul className="contact__bodyText">
                             <li>📌 Potencial suficiente para poder desempeñarme y contribuir con mis conocimientos a los objetivos propuestos.
                             </li>
-                            <li>📌 Capacidad y motivacion para seguir aprendiendo.
+                            <li>📌 Capacidad y motivación para seguir aprendiendo.
                             </li>
-                            <li>📌 No menos importante, inteligencia emocional o <i>"soft skills"</i> para desempeñarme en un entorno laboral profesional.
+                            <li>📌 No menos importante, en relaciona las <i>"soft skills"</i>, me considero una persona comunicativa, creativa, resolutiva entre otras lo cual considero que me permitirá desempeñarme de manera eficiente en un entorno laboral profesional.
                             </li>      
                         </ul>
                         <p>
