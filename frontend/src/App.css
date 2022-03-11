@@ -963,6 +963,12 @@ form > textarea:focus-visible{
 /* MOBILE BREAKPOINTS */
 @media screen and (max-width: 480px) {
 
+
+  body{
+    background: rgb(19,5,72);
+    background: linear-gradient(180deg, rgba(19,5,72,1) 30%, rgba(97,19,69,1) 100%);
+  }
+
   .main__container{
     height: 100%;
   }
