@@ -586,8 +586,17 @@ body{
 .projects__image{
   border-radius: 10px;
   padding: 1rem;
-  text-align: center;
   font-size: 12px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects__image-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .projects__image img{
@@ -596,15 +605,42 @@ body{
 
 
 .certification__image{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   text-align: center;
   border-radius: 10px;
   padding: 1rem;
   font-size: 12px;
-
 }
 
 .certification__image img{
   width: 60px;
+}
+
+.send-button-skill{
+  text-align: center;
+  min-width: 6rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: .5rem;
+  color: white;
+  background-color: #876083;
+  box-shadow: 1px 1px 5px #0000006e;
+  text-indent: 0;
+  
+}
+
+.projects-container a{
+
+  text-decoration: none;
+}
+
+.send-button-skill:hover{
+  transition: .3s;
+  background-color: #704c7b;
+  cursor: pointer;
+
 }
 
 
@@ -729,6 +765,7 @@ form > textarea:focus-visible{
   box-shadow: 1px 1px 5px #0000006e;
 
 }
+
 
 .send-button svg{
   font-size: 12px;

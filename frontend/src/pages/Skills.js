@@ -45,39 +45,43 @@ export default function Skills(props) {
               
                 <div className="projects-container">
                     <div className="certification__image">
+                        <img src={bootcamp} alt="Bootcamp MindHub" title="Bootcamp MindHub"/>
                         <a 
                         href="https://www.credly.com/earner/earned/badge/64a66a6e-5e73-4245-868f-f421b2fbf310"
                         target='_blank'
                         rel="noreferrer">
-                            <img src={bootcamp} alt="Bootcamp MindHub" title="Bootcamp MindHub"/>
-                        </a>
                         {
                             language?
-                            <p>Certificación</p>
+                            <p className="send-button-skill">Certificación</p>
                             :
-                            <p>Certification</p>
+                            <p className="send-button-skill">Certification</p>
                         }
                         
+                        </a>
                     </div>
                     <div className="projects__image">
+                        <div className="projects__image-img">
+                        <img src={hexagon} alt="Hexagon Tech Store" title="Hexagon Tech Store"/>
+                        <img src={itindev} alt="ITinDev" title="ITinDev"/>
+                        </div>
+                        <div>
                         <a 
                             href="https://hexagon-techstore.herokuapp.com/"
                             target='_blank'
                             rel="noreferrer">
-                                <img src={hexagon} alt="Hexagon Tech Store" title="Hexagon Tech Store"/>
                         </a>
                         <a 
                         href=" https://itindev-mindhub.herokuapp.com/"
                         target='_blank'
                         rel="noreferrer">
-                            <img src={itindev} alt="ITinDev" title="ITinDev"/>
-                        </a>
                         {
                             language?
-                            <p>Proyectos grupales</p>
+                            <p className="send-button-skill">Proyectos grupales</p>
                             :
-                            <p>Group projects</p>
+                            <p className="send-button-skill">Group projects</p>
                         }
+                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
