@@ -585,10 +585,9 @@ body{
 
 .projects__image{
   border-radius: 10px;
-  padding: 1rem;
   font-size: 12px;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
 }
@@ -600,7 +599,7 @@ body{
 }
 
 .projects__image img{
-  width: 50px;
+  width: 60px;
 }
 
 
@@ -610,13 +609,22 @@ body{
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0 .5rem;
   font-size: 12px;
 }
 
 .certification__image img{
   width: 60px;
 }
+
+.project-group-button{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2px;
+}
+
 
 .send-button-skill{
   text-align: center;

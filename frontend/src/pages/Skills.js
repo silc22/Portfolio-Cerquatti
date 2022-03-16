@@ -60,25 +60,31 @@ export default function Skills(props) {
                         </a>
                     </div>
                     <div className="projects__image">
-                        <div className="projects__image-img">
+                        <div className="project-group-button">
                         <img src={hexagon} alt="Hexagon Tech Store" title="Hexagon Tech Store"/>
-                        <img src={itindev} alt="ITinDev" title="ITinDev"/>
-                        </div>
-                        <div>
                         <a 
                             href="https://hexagon-techstore.herokuapp.com/"
                             target='_blank'
                             rel="noreferrer">
+                                {
+                            language?
+                            <p className="send-button-skill">Hexagon</p>
+                            :
+                            <p className="send-button-skill">Hexagon</p>
+                        }
                         </a>
+                        </div>
+                        <div className="project-group-button">
+                        <img src={itindev} alt="ITinDev" title="ITinDev"/>
                         <a 
                         href=" https://itindev-mindhub.herokuapp.com/"
                         target='_blank'
                         rel="noreferrer">
                         {
                             language?
-                            <p className="send-button-skill">Proyectos grupales</p>
+                            <p className="send-button-skill">ITindev</p>
                             :
-                            <p className="send-button-skill">Group projects</p>
+                            <p className="send-button-skill">ITindev</p>
                         }
                         </a>
                         </div>
