@@ -47,7 +47,7 @@ export default function Skills(props) {
                     <div className="certification__image">
                         <img src={bootcamp} alt="Bootcamp MindHub" title="Bootcamp MindHub"/>
                         <a 
-                        href="https://www.credly.com/earner/earned/badge/64a66a6e-5e73-4245-868f-f421b2fbf310"
+                        href="https://www.credly.com/badges/64a66a6e-5e73-4245-868f-f421b2fbf310/public_url"
                         target='_blank'
                         rel="noreferrer">
                         {
